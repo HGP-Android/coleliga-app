@@ -41,15 +41,16 @@ public class EquiposActivity extends AppCompatActivity {
         recycler.addOnItemTouchListener(
                 new RecyclerItemClickListener(EquiposActivity.this, new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View v, int position) {
-                        /*Intent intent = new Intent(ListasActivity.this, DetalleListaActivity.class);
-                        intent.putExtra("numeroLista", position);*/
-                        //startActivity(intent);
+
                         StringBuilder tmp = new StringBuilder();
                         tmp.append("");
                         tmp.append(position);
-                        String msg = "Se ha pulsado el elemento " + tmp.toString();
-                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
-
+                        /*String msg = "Se ha pulsado el elemento " + tmp.toString();
+                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();*/
+                        Intent intent = new Intent(EquiposActivity.this, VistaEquipoActivity.class);
+                        intent.putExtra("numeroEquipo", position);
+                        intent.putExtra("insercion", false);
+                        startActivity(intent);
                     }
                 })
         );
