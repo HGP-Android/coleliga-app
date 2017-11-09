@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiposCategorias">
+        <item>Micros</item>
+        <item>Pre-Benjamín</item>
+        <item>Benjamín</item>
+        <item>Alevín</item>
+        <item>Infantil</item>
+        <item>Cadete</item>
+        <item>Juvenil</item>
+        <item>Sénior</item>
+
+    </string-array>
+    <string-array name="tiposCategoriasValores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>
