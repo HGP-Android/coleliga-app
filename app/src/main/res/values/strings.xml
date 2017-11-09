@@ -5,4 +5,27 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="modalidad">Modalidad</string>
+    <string name="modoliguilla">Liguilla</string>
+    <string name="modoliguilladesc">Sistema de todos contra todos, los participantes se enfrentan entre ellos en un número constante de oportunidades.</string>
+    <string name="modoeliminatoria">Eliminatoria</string>
+    <string name="modoeliminatoriadesc">Sistema de eliminación directa, el perdedor de un encuentro queda  eliminado, mientras que el ganador avanza a la siguiente fase. Se van jugando rondas.</string>
+    <string name="modoeliminaciondirecta">Eliminación directa</string>
+    <string name="modoeliminaciondirectadesc">Sistema .</string>
+    <string name="modomixta">Mixta</string>
+    <string name="modomixtadesc">Descripcion Mixta</string>
+    <string name="modomanual">Manual</string>
+    <string name="modomanualdesc">Descripción Manual</string>
+
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="accion_aceptar">Aceptar</string>
+
+    <string name="op_privado">Privado</string>
+    <string name="op_publico">Público</string>
+
+    <string name="hint_nomtorneo">Nombre del torneo</string>
+    <string name="hint_precio">10.00</string>
+    <string name="hint_organizador">Nombre del Organizador</string>
+
 </resources>
