@@ -1,6 +1,7 @@
 package com.hgp_android.coleliga;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -54,5 +55,15 @@ public class EquiposActivity extends AppCompatActivity {
                     }
                 })
         );
+        //Gestión botón flotante
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EquiposActivity.this, EditarEquipoActivity.class);
+                intent.putExtra("insercion", true);
+                startActivity(intent);
+            }
+        });
     }
 }

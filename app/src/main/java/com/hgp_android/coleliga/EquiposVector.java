@@ -50,7 +50,7 @@ public class EquiposVector implements Equipos {
         equipos.add(new com.hgp_android.coleliga.Equipo("Alaolla Team",logo2,"Castellón", 16, 16,"Paco",2));
         equipos.add(new com.hgp_android.coleliga.Equipo("abc Team",logo,"Castellón", 20, 16,"Anahí",6));
         equipos.add(new com.hgp_android.coleliga.Equipo("cde Team",logo2,"Alicante", 20, 16,"Osvaldo",5));
-        equipos.add(new com.hgp_android.coleliga.Equipo("efg Team",logo,"Burriana", 20, 16,"Padre motivado",0));
+        equipos.add(new com.hgp_android.coleliga.Equipo("efg Team",logo,"Burriana", 20, 16,"Padre motivado",8));
 
         return equipos;
     }

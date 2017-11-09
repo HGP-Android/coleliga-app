@@ -79,6 +79,12 @@ public class Equipo {
     }
 
     public Equipo() {
-        this.nombre = "vacio";
+        this.nombre = "";
+        this.logo = 0;
+        this.ubicacion = "";
+        this.max_jugadores = 0;
+        this.jugadores_act = 0;
+        this.entrenador = "";
+        this.categoria = 0;
     }
 }
