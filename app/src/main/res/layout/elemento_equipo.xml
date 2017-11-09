@@ -15,8 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView android:id="@+id/imagen"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginLeft="16dp"
@@ -30,13 +30,22 @@
             app:layout_constraintLeft_toRightOf="@+id/imagen"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_margin="8dp" tools:text="Personal"/>
-        <TextView android:id="@+id/elementos"
+        <TextView android:id="@+id/categoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
 
             app:layout_constraintLeft_toRightOf="@+id/imagen"
             app:layout_constraintTop_toBottomOf="@+id/nombre"
+            android:layout_margin="8dp"
+            tools:text="13 elementos"/>
+        <TextView android:id="@+id/elementos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            app:layout_constraintLeft_toRightOf="@+id/imagen"
+            app:layout_constraintTop_toBottomOf="@+id/categoria"
             android:layout_margin="8dp"
             tools:text="13 elementos"/>
         <!--android:textColor="@color/primaryTextColor"-->

@@ -40,15 +40,16 @@ public class EquiposVector implements Equipos {
     }
 
     public static ArrayList<com.hgp_android.coleliga.Equipo> ejemploEquipos() {
+        int logo = R.drawable.ic_escudo;
         ArrayList<com.hgp_android.coleliga.Equipo> equipos = new ArrayList<com.hgp_android.coleliga.Equipo>();
-        equipos.add(new com.hgp_android.coleliga.Equipo("Manolete Team",1,"Castellón", 20, 20,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("algo Team",1,"Madrid", 20, 16,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("OtroMas Team",1,"Barcelona", 18, 14,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("Barraca Team",1,"Borriol", 21, 16,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("Alaolla Team",1,"Castellón", 16, 16,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("abc Team",1,"Castellón", 20, 16,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("cde Team",1,"Alicante", 20, 16,4,3));
-        equipos.add(new com.hgp_android.coleliga.Equipo("efg Team",1,"Burriana", 20, 16,4,3));
+        equipos.add(new com.hgp_android.coleliga.Equipo("Manolete Team",logo,"Castellón", 20, 20,"Guardiola",1));
+        equipos.add(new com.hgp_android.coleliga.Equipo("algo Team",logo,"Madrid", 20, 16,"Mourinho",3));
+        equipos.add(new com.hgp_android.coleliga.Equipo("OtroMas Team",logo,"Barcelona", 18, 14,"Manolo",7));
+        equipos.add(new com.hgp_android.coleliga.Equipo("Barraca Team",logo,"Borriol", 21, 16,"Max",4));
+        equipos.add(new com.hgp_android.coleliga.Equipo("Alaolla Team",logo,"Castellón", 16, 16,"Paco",2));
+        equipos.add(new com.hgp_android.coleliga.Equipo("abc Team",logo,"Castellón", 20, 16,"Anahí",6));
+        equipos.add(new com.hgp_android.coleliga.Equipo("cde Team",logo,"Alicante", 20, 16,"Osvaldo",5));
+        equipos.add(new com.hgp_android.coleliga.Equipo("efg Team",logo,"Burriana", 20, 16,"Padre motivado",0));
 
         return equipos;
     }

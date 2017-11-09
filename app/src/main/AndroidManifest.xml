@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EquiposActivity"></activity>
+        <activity android:name=".EquiposActivity" />
+        <activity android:name=".VistaEquipoActivity"></activity>
     </application>
 
 </manifest>

@@ -9,16 +9,16 @@ public class Equipo {
     private String ubicacion;
     private int max_jugadores;
     private int jugadores_act;
-    private int id_entrenador;
+    private String entrenador;
     private int categoria;
 
-    public Equipo(String nombre, int logo, String ubicacion, int max_jugadores,int jugadores_act, int id_entrenador, int categoria) {
+    public Equipo(String nombre, int logo, String ubicacion, int max_jugadores,int jugadores_act, String entrenador, int categoria) {
         this.nombre = nombre;
         this.logo = logo;
         this.ubicacion = ubicacion;
         this.max_jugadores = max_jugadores;
         this.jugadores_act = jugadores_act;
-        this.id_entrenador = id_entrenador;
+        this.entrenador = entrenador;
         this.categoria = categoria;
     }
 
@@ -54,12 +54,12 @@ public class Equipo {
         this.max_jugadores = max_jugadores;
     }
 
-    public int getId_entrenador() {
-        return id_entrenador;
+    public String getId_entrenador() {
+        return entrenador;
     }
 
-    public void setId_entrenador(int id_entrenador) {
-        this.id_entrenador = id_entrenador;
+    public void setId_entrenador(String entrenador) {
+        this.entrenador = entrenador;
     }
 
     public int getCategoria() {
