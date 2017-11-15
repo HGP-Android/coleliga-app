@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name">coleliga</string>
+    <string name="app_name">Coleliga</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+
+    <string name="tipo_identificacion_prompt">Selecciona un Tipo de Identificación</string>
+    <string-array name="tipo_identificacion">
+        <item>DNI</item>
+        <item>CIF</item>
+        <item>PASAPORTE</item>
+    </string-array>
+
 </resources>

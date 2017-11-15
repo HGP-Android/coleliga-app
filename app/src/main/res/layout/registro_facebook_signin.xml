@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/ic_coleliga_launcher"
+        android:src="@mipmap/ic_launcher_coleliga"
         android:paddingTop="30dp"
         android:paddingBottom="20dp"/>
 
@@ -42,6 +42,7 @@
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:layout_margin="50dp"
+        android:onClick="lanzarMainDesdeFacebook"
         />
 
 

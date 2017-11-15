@@ -11,12 +11,14 @@
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="juan@gmail.com"/>
+        android:text="juan@gmail.com"
+        android:onClick="lanzarMainDesdeGoogle"/>
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="jose@gmail.com"/>
+        android:text="jose@gmail.com"
+        android:onClick="lanzarMainDesdeGoogle"/>
 
 
 </LinearLayout>
