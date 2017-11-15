@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="@drawable/login_fondo" android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Ingresa tu correo electrónico"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="Correo electrónico"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Ingresa la contraseña"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:paddingBottom="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:paddingBottom="20dp"
+        android:onClick="lanzarMainDesdeLogin"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre ó Razón Social"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/tipo_identificacion_prompt"
+        android:entries="@array/tipo_identificacion"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Identificación"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Móvil de Contacto"
+        android:inputType="text|phone" />
+
+    <EditText
+        android:id="@+id/fecha_nacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Nacimiento"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pais"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
