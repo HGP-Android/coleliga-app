@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tiposCategorias">
+        <item>Selecciona Categoría</item>
+        <item>Micros</item>
+        <item>Pre-Benjamín</item>
+        <item>Benjamín</item>
+        <item>Alevín</item>
+        <item>Infantil</item>
+        <item>Cadete</item>
+        <item>Juvenil</item>
+        <item>Sénior</item>
+
+    </string-array>
+
+
+</resources>

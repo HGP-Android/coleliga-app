@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EquiposActivity" />
+        <activity android:name=".VistaEquipoActivity" />
+        <activity android:name=".EditarEquipoActivity"></activity>
     </application>
 
 </manifest>

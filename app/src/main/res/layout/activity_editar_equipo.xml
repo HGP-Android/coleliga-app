@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hgp_android.coleliga.VistaEquipoActivity">
+
+        <ImageButton
+            android:id="@+id/escudo"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:elevation="6dp"
+            android:scaleType="centerCrop"
+            android:onClick="CargaImagen"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <EditText
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Nombre del equipo"
+            android:hint="Nombre del equipo"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/escudo" />
+
+
+        <LinearLayout
+            android:id="@+id/barra_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+            <ImageView
+                android:id="@+id/logo_categoria"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo de la direccion"
+                android:src="@drawable/categoria" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:prompt="@string/categorias"
+                android:entries="@array/tiposCategorias"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/barra_entrenador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_categoria">
+
+            <ImageView
+                android:id="@+id/logo_entrenador"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo de la direccion"
+                android:src="@drawable/entrenador" />
+
+            <EditText
+                android:id="@+id/entrenador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="Indica el entrenador, por defecto serás tu!!"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/barra_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_entrenador">
+
+            <ImageView
+                android:id="@+id/logo_direccion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo de la direccion"
+                android:src="@android:drawable/ic_dialog_map" />
+
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="Indica de donde es el equipo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/barra_jugadores_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_direccion">
+
+            <ImageView
+                android:id="@+id/logo_jugadores_max"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo de la direccion"
+                android:src="@drawable/jugador" />
+
+            <EditText
+                android:id="@+id/jugadores_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:hint="Indica los jugadores máximos"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Aceptar"
+            android:onClick="Confirmar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_jugadores_max" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
