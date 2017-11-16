@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hgp_android.coleliga.player.PlayerListActivity;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -88,7 +90,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_perfil) {
             Intent i = new Intent(this,RegistroFull.class);
             startActivity(i);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_players) {
+            Intent intent = new Intent(this, PlayerListActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_slideshow) {
             Intent i = new Intent(MainActivity.this,

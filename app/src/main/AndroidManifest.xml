@@ -12,11 +12,11 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
-        <activity android:name=".RegistroActivity" android:label="@string/app_name" android:theme="@style/RegistroTheme">
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistroActivity"
+            android:label="@string/app_name"
+            android:theme="@style/RegistroTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,18 +25,40 @@
         </activity>
         <activity android:name=".EquiposActivity" />
         <activity android:name=".VistaEquipoActivity" />
-        <activity android:name=".EditarEquipoActivity"></activity>
-
-        <activity android:name=".RegistroGoogle" android:label="Google" android:theme="@android:style/Theme.Holo.Dialog"/>
-        <activity android:name=".RegistroFacebbok" android:label="Facebook"/>
-        <activity android:name=".RegistroFacebookSignIn" android:label="Facebook"/>
-        <activity android:name=".RegistroLogin" android:label="Login"/>
-        <activity android:name=".RegistroSignUp" android:label="Crear Cuenta"/>
-        <activity android:name=".RegistroFull" android:label="Selecciona tu perfil"/>
-        <activity android:name=".RegistroFullJugador" android:label="Jugador Nuevo"/>
-        <activity android:name=".RegistroFullDuenio" android:label="Dueño de Lugar Nuevo"/>
-        <activity android:name=".RegistroFullEntrenador" android:label="Entrenador Nuevo"/>
-        <activity android:name=".RegistroFullOrganizador" android:label="Organizador Nuevo"/>
+        <activity android:name=".EditarEquipoActivity" />
+        <activity
+            android:name=".RegistroGoogle"
+            android:label="Google"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".RegistroFacebbok"
+            android:label="Facebook" />
+        <activity
+            android:name=".RegistroFacebookSignIn"
+            android:label="Facebook" />
+        <activity
+            android:name=".RegistroLogin"
+            android:label="Login" />
+        <activity
+            android:name=".RegistroSignUp"
+            android:label="Crear Cuenta" />
+        <activity
+            android:name=".RegistroFull"
+            android:label="Selecciona tu perfil" />
+        <activity
+            android:name=".RegistroFullJugador"
+            android:label="Jugador Nuevo" />
+        <activity
+            android:name=".RegistroFullDuenio"
+            android:label="Dueño de Lugar Nuevo" />
+        <activity
+            android:name=".RegistroFullEntrenador"
+            android:label="Entrenador Nuevo" />
+        <activity
+            android:name=".RegistroFullOrganizador"
+            android:label="Organizador Nuevo" />
+        <activity android:name=".player.PlayerListActivity" />
+        <activity android:name=".player.PlayerDetailActivity"></activity>
     </application>
 
 </manifest>
