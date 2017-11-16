@@ -1,11 +1,21 @@
 package com.hgp_android.coleliga.player;
 
+import android.content.Intent;
+import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
 import com.hgp_android.coleliga.R;
+import com.hgp_android.coleliga.RecyclerItemClickListener;
 
 import java.util.ArrayList;
 
@@ -33,6 +43,18 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerMVP.V
 
         recycler.setAdapter(new PlayerAdapter(players));
 
+        recycler.addOnItemTouchListener(
+                new RecyclerItemClickListener(PlayerListActivity.this,
+                        new RecyclerItemClickListener.OnItemClickListener() {
+                            @Override public void onItemClick(View v, int position) {
+                                Intent intent = new Intent(PlayerListActivity.this, PlayerDetailActivity.class);
+                                intent.putExtra("numeroLista", position);
+                                startActivity(intent);
+                            }
+                        })
+        );
+
+
 
     }
 
@@ -49,5 +71,7 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerMVP.V
         return players;
 
     }
+
+
 
 }

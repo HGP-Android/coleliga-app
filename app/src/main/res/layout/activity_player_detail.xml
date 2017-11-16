@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.hgp_android.coleliga.player.PlayerDetailActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlayerName"
+        android:text="Nombre Jugador"
+        />
+
+
+
 </android.support.constraint.ConstraintLayout>
