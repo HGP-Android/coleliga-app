@@ -94,27 +94,14 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, PlayerListActivity.class);
             startActivity(intent);
 
-        if (id == R.id.nav_login) {
-            Intent i = new Intent(this,RegistroActivity.class);
-            startActivity(i);
-        } else if (id == R.id.nav_perfil) {
-            Intent i = new Intent(this,RegistroFull.class);
-            startActivity(i);
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_teams) {
             Intent i = new Intent(MainActivity.this,
                     EquiposActivity.class);
             startActivity(i);
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_torneos) {
             Intent i = new Intent(MainActivity.this,
                     ListasTorneos.class);
             startActivity(i);
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

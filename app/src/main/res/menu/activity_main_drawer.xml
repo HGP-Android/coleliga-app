@@ -10,32 +10,18 @@
         <item
             android:id="@+id/nav_perfil"
             android:icon="@drawable/ic_menu_profile"
-            android:title="Actualiza tu perfil" />
+            android:title="Perfil" />
         <item
             android:id="@+id/nav_players"
             android:icon="@drawable/ic_assignment_ind_black_24dp"
             android:title="Jugadores" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_teams"
+            android:icon="@drawable/ic_menu_team"
+            android:title="Equipos" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/nav_torneos"
+            android:icon="@drawable/ic_menu_torneo"
             android:title="Torneos" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
-
 </menu>
