@@ -47,21 +47,26 @@ public class PlayerListActivity extends AppCompatActivity implements PlayerMVP.V
                 new RecyclerItemClickListener(PlayerListActivity.this,
                         new RecyclerItemClickListener.OnItemClickListener() {
                             @Override public void onItemClick(View v, int position) {
+                                players.get(position).getName();
                                 Intent intent = new Intent(PlayerListActivity.this, PlayerDetailActivity.class);
-                                intent.putExtra("numeroLista", position);
+                                intent.putExtra("player_name", players.get(position).getName());
+                                intent.putExtra("player_nickname", players.get(position).getNickname());
+                                intent.putExtra("player_birthdate", players.get(position).getBirthdate());
+                                intent.putExtra("player_country", players.get(position).getCountry());
+                                intent.putExtra("player_city", players.get(position).getCity());
+                                intent.putExtra("player_image", players.get(position).getImage());
+                                intent.putExtra("player_position", players.get(position).getPosition());
+
                                 startActivity(intent);
                             }
                         })
         );
 
 
-
     }
 
 
     private ArrayList<Player> generatePlayer(){
-
-        //players = new ArrayList<Player>();
 
         players.add(new Player("Juanito Valderrama","Valde", "24/05/1916", "España","Torredelcampo", R.drawable.valderrama, "Defensa"));
         players.add(new Player("Juan Peña","Lebrijano", "08/08/1941", "España","Torredelcampo", R.drawable.lebrijano, "Delantero"));
