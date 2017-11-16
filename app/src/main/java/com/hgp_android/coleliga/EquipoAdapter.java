@@ -9,8 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
-
 /**
  * Created by carlos on 09/11/2017.
  */
@@ -32,7 +30,7 @@ public class EquipoAdapter extends
         public ListaViewHolder(View v) {
             super(v);
             imagen = (ImageView) v.findViewById(R.id.imagen);
-            nombre = (TextView) v.findViewById(R.id.nombre);
+            nombre = (TextView) v.findViewById(R.id.p);
             jugadores = (TextView) v.findViewById(R.id.elementos);
             categoria = (TextView) v.findViewById(R.id.categoria);
         }

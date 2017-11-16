@@ -94,11 +94,22 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, PlayerListActivity.class);
             startActivity(intent);
 
+        if (id == R.id.nav_login) {
+            Intent i = new Intent(this,RegistroActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_perfil) {
+            Intent i = new Intent(this,RegistroFull.class);
+            startActivity(i);
+        } else if (id == R.id.nav_gallery) {
+
         } else if (id == R.id.nav_slideshow) {
             Intent i = new Intent(MainActivity.this,
                     EquiposActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_manage) {
+            Intent i = new Intent(MainActivity.this,
+                    ListasTorneos.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_share) {
 
