@@ -4,21 +4,93 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_coleliga"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_coleliga"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".RegistroActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/RegistroTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".EquiposActivity"
+            android:label="Listado de equipos"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".VistaEquipoActivity"
+            android:screenOrientation="portrait"
+            android:label="Equipo"
+            />
+        <activity android:name=".EditarEquipoActivity"
+            android:label="Editar Equipo"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".RegistroGoogle"
+            android:label="Google"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFacebbok"
+            android:label="Facebook"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFacebookSignIn"
+            android:label="Facebook"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroLogin"
+            android:label="Login"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroSignUp"
+            android:label="Crear Cuenta"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFull"
+            android:label="Selecciona tu perfil"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFullJugador"
+            android:label="Jugador Nuevo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFullDuenio"
+            android:label="Dueño de Lugar Nuevo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFullEntrenador"
+            android:label="Entrenador Nuevo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistroFullOrganizador"
+            android:label="Organizador Nuevo"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".player.PlayerListActivity"
+            android:label="Lista de jugadores"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".player.PlayerDetailActivity"
+            android:screenOrientation="portrait"
+            android:label="Detalle Jugador"
+            ></activity>
+
+        <activity android:name=".ListasTorneos"/>
+        <activity android:name=".FormTorneoActivity"/>
+        <activity android:name=".ListaClasificacionesTorneo"/>
+
+    </application>
 </manifest>

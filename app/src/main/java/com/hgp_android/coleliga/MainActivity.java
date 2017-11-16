@@ -1,5 +1,6 @@
 package com.hgp_android.coleliga;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.hgp_android.coleliga.player.PlayerListActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,18 +83,25 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        if (id == R.id.nav_login) {
+            Intent i = new Intent(this,RegistroActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_perfil) {
+            Intent i = new Intent(this,RegistroFull.class);
+            startActivity(i);
+        } else if (id == R.id.nav_players) {
+            Intent intent = new Intent(this, PlayerListActivity.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_teams) {
+            Intent i = new Intent(MainActivity.this,
+                    EquiposActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_torneos) {
+            Intent i = new Intent(MainActivity.this,
+                    ListasTorneos.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
