@@ -3,9 +3,14 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_login"
+            android:icon="@android:drawable/ic_lock_lock"
+            android:title="Login" />
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="Actualiza tu perfil" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
@@ -17,7 +22,7 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Torneos" />
     </group>
 
     <item android:title="Communicate">

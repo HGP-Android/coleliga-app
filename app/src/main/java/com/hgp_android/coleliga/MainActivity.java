@@ -81,8 +81,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+
+        if (id == R.id.nav_login) {
+            Intent i = new Intent(this,RegistroActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_perfil) {
+            Intent i = new Intent(this,RegistroFull.class);
+            startActivity(i);
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -90,6 +95,9 @@ public class MainActivity extends AppCompatActivity
                     EquiposActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_manage) {
+            Intent i = new Intent(MainActivity.this,
+                    ListasTorneos.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_share) {
 
