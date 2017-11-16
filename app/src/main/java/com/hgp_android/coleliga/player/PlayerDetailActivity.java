@@ -24,8 +24,6 @@ public class PlayerDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_player_detail);
 
 
-        //tvPlayerName = (TextView) findViewById(R.id.tvPlayerName);
-
         initField();
 
         String player_name = (String) getIntent().getExtras().getSerializable("player_name");
