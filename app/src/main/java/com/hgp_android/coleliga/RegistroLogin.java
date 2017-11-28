@@ -19,7 +19,7 @@ public class RegistroLogin extends AppCompatActivity {
 
     public void lanzarMainDesdeLogin (View view)
     {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, PrincipalActivity.class);
         startActivity(i);
     }
 

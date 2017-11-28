@@ -19,7 +19,7 @@ public class RegistroFacebookSignIn extends AppCompatActivity {
 
     public void lanzarMainDesdeFacebook (View view)
     {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, PrincipalActivity.class);
         startActivity(i);
     }
 
