@@ -28,5 +28,11 @@
             android:id="@+id/nav_places"
             android:icon="@drawable/ic_place_black_24dp"
             android:title="Lugares"/>
+
+        <item
+            android:id="@+id/nav_matches"
+            android:icon="@drawable/ic_menu_partidos"
+            android:title="Partidos"/>
+
     </group>
 </menu>

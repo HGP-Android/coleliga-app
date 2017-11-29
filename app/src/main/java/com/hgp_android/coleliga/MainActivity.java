@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.hgp_android.coleliga.lugares.PlaceListActivity;
+import com.hgp_android.coleliga.partidos.PartidosActivity;
 import com.hgp_android.coleliga.player.PlayerListActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -108,6 +109,13 @@ public class MainActivity extends AppCompatActivity
                     PlaceListActivity.class);
             startActivity(i);
         }
+
+        else if (id == R.id.nav_matches) {
+            Intent i = new Intent(MainActivity.this,
+                    PartidosActivity.class);
+            startActivity(i);
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
