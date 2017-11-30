@@ -23,5 +23,10 @@
             android:id="@+id/nav_torneos"
             android:icon="@drawable/ic_menu_torneo"
             android:title="Torneos" />
+
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Lugares"/>
     </group>
 </menu>

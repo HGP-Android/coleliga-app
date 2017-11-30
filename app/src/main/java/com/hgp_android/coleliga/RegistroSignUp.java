@@ -15,7 +15,7 @@ public class RegistroSignUp extends AppCompatActivity {
 
     public void lanzarMainDesdeSignUp (View view)
     {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, PrincipalActivity.class);
         startActivity(i);
     }
 

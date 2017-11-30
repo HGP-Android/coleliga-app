@@ -38,4 +38,11 @@
     <string name="hint_precio">10.00</string>
     <string name="hint_organizador">Nombre del Organizador</string>
 
+    <string name="equipo">Equipo</string>
+    <string name="pj">J</string>
+    <string name="pg">G</string>
+    <string name="pp">P</string>
+    <string name="pts">PTS</string>
+    <string name="pe">E</string>
+
 </resources>

@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hgp_android.coleliga.lugares.PlaceListActivity;
 import com.hgp_android.coleliga.player.PlayerListActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -101,6 +102,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_torneos) {
             Intent i = new Intent(MainActivity.this,
                     ListasTorneos.class);
+            startActivity(i);
+        } else if (id == R.id.nav_places) {
+            Intent i = new Intent(MainActivity.this,
+                    PlaceListActivity.class);
             startActivity(i);
         }
 
