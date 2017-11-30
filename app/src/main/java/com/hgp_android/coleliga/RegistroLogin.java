@@ -23,5 +23,18 @@ public class RegistroLogin extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void lanzarFacebook (View view)
+    {
+        Intent i = new Intent(this, RegistroFacebbok.class);
+        startActivity(i);
+    }
+
+    public void seleccionarCuenta (View view)
+    {
+        Intent i = new Intent(this, RegistroGoogle.class);
+        startActivity(i);
+    }
+
+
 
 }
