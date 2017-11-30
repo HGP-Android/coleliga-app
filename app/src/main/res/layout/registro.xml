@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondosplash"
     android:orientation="vertical"
-    android:scrollbarAlwaysDrawVerticalTrack="true">
-
-    <TextView
-        android:id="@+id/login_title"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center_horizontal"
-        android:text="Account Login"
-        android:textColor="#fff"
-        android:textSize="26sp"
-        android:textStyle="bold" />
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.hgp_android.coleliga.RegistroActivity">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -25,13 +15,14 @@
         android:layout_below="@+id/login_title"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:background="#fff"
         android:elevation="4dp"
         android:orientation="vertical"
         android:padding="20dp">
 
         <LinearLayout
+            android:id="@+id/linear1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -74,25 +65,66 @@
                 android:text="Forgot Password?" />
 
 
-            <Button
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button5"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="22dp"
+                android:layout_margin="10dp"
                 android:background="@color/colorAccent"
+                android:onClick="lanzarLogin"
                 android:text="Sign in"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="seleccionarCuenta"
+
+                android:text="Google"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="lanzarFacebook"
+                android:text="Facebook"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="18sp" />
+
+
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linear1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:onClick="lanzarMainDesdeLogin"
+            android:text="Register" />
     </RelativeLayout>
 
     <ImageButton
         android:id="@+id/user_profile_photo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/login_title"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
         android:background="@drawable/user_profile_image_background"
         android:elevation="4dp"
         android:src="@drawable/ic_account_circle_black_24dp" />
