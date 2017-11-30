@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class RegistroActivity extends AppCompatActivity {
 
-    Button blogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

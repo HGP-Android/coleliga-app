@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import java.util.List;
 
 /**
@@ -40,6 +41,18 @@ public class ListaAdapterTorneos extends
         public ListaViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
             View v = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.elemento_torneo, viewGroup, false);
+
+            /*MaterialRippleLayout.on(inflater.inflate(R.layout.demo_recycler_item, viewGroup, false))
+                    .rippleOverlay(true)
+                    .rippleAlpha(0.2f)
+                    .rippleColor(0xFF585858)
+                    .rippleHover(true)
+                    .create()
+            );*/
+
+
+
+
             return new ListaViewHolder(v);
         }
         @Override
