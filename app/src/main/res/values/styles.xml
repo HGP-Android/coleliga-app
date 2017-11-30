@@ -30,5 +30,12 @@
         <item name="@android:textColor">@color/black</item>
     </style>
 
+    <!-- Theme an individual view: -->
+    <style name="CardView.MyBlue">
+        <!-- <item name="cardBackgroundColor">@color/my_blue</item>
+        Make the corners very round: -->
+        <item name="cardCornerRadius">18dp</item>
+    </style>
+
 
 </resources>

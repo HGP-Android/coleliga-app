@@ -65,7 +65,7 @@ public class ListasTorneos extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ListasTorneos.this, FormTorneoActivity.class);
+                Intent intent = new Intent(ListasTorneos.this, TorneoModalidad.class);
                 intent.putExtra("insercion", true);
                 startActivity(intent);
             }
