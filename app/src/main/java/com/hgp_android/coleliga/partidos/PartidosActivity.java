@@ -54,7 +54,7 @@ public class PartidosActivity  extends AppCompatActivity {
                         /*String msg = "Se ha pulsado el elemento " + tmp.toString();
                         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();*/
                         Intent intent = new Intent(PartidosActivity.this, DetallePartidoActivity.class);
-                        intent.putExtra("numeroEquipo", position);
+                        intent.putExtra("numeroPartido", position);
                         intent.putExtra("insercion", false);
                         startActivity(intent);
                     }
