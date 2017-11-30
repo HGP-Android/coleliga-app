@@ -93,31 +93,65 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/barra_direccion"
+            android:id="@+id/barra_equipos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="32dp"
             android:orientation="horizontal"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/barra_fecha">
 
-            <ImageView
-                android:id="@+id/logo_direccion"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
-                android:src="@android:drawable/ic_menu_myplaces" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/logo_equipo_a"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="logo de la direccion"
+                    android:src="@drawable/ic_escudo" />
+
+                <TextView
+                    android:id="@+id/equipo_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipo A"/>
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/direccion"
-                android:layout_width="match_parent"
+                android:id="@+id/vs"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="Avda. Casalduch 29D, 9º 18 12005 Castelló"
+                android:text="VS"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/logo_equipo_b"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="logo de la direccion"
+                    android:src="@drawable/ic_escudo2" />
+
+                <TextView
+                    android:id="@+id/equipo_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipo B"/>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -130,7 +164,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/barra_direccion">
+            app:layout_constraintTop_toBottomOf="@+id/barra_equipos">
 
             <ImageView
                 android:id="@+id/logo_jugadores_max"
@@ -158,7 +192,6 @@
             android:layout_marginRight="8dp"
             android:clickable="true"
             app:elevation="6dp"
-
             app:layout_anchorGravity="bottom|end"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

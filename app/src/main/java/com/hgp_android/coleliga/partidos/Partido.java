@@ -13,8 +13,7 @@ public class Partido {
     private String nicknamePartido;
     private Date fecha;
     private String teamA, teamB;
-    private ArrayList<Player> players = new ArrayList<Player>();
-    private Place place;
+    private String place;
     private int maxPlayers;
 
 
@@ -58,19 +57,11 @@ public class Partido {
         this.teamB = teamB;
     }
 
-    public ArrayList<Player> getPlayers() {
-        return players;
-    }
-
-    public void setPlayers(ArrayList<Player> players) {
-        this.players = players;
-    }
-
-    public Place getPlace() {
+    public String getPlace() {
         return place;
     }
 
-    public void setPlace(Place place) {
+    public void setPlace(String place) {
         this.place = place;
     }
 
