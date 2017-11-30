@@ -93,6 +93,7 @@
 
         <activity android:name=".partidos.PartidosActivity" android:label="Lista de Partidos"/>
         <activity android:name=".partidos.DetallePartidoActivity" android:label="Detalle Partido"/>
+        <activity android:name=".partidos.EditarPartidoActivity" android:label="Editar Partido"/>
 
     </application>
 

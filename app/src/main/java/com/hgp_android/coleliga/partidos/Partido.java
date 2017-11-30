@@ -16,6 +16,10 @@ public class Partido {
     private String place;
     private int maxPlayers;
 
+    public Partido() {
+
+    }
+
     public Partido(String nicknamePartido, Date fecha, String teamA, String teamB, String place, int maxPlayers) {
         this.nicknamePartido = nicknamePartido;
         this.fecha = fecha;

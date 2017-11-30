@@ -67,8 +67,8 @@ public class PartidosActivity  extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PartidosActivity.this, EditarEquipoActivity.class);
-                intent.putExtra("insercion", true);
+                Intent intent = new Intent(PartidosActivity.this, EditarPartidoActivity.class);
+                intent.putExtra("editar", false);
                 startActivity(intent);
             }
         });

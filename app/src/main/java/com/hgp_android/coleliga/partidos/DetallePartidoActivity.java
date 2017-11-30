@@ -1,10 +1,14 @@
 package com.hgp_android.coleliga.partidos;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 
+import com.hgp_android.coleliga.EditarEquipoActivity;
 import com.hgp_android.coleliga.EquiposActivity;
 import com.hgp_android.coleliga.R;
 
@@ -36,7 +40,17 @@ public class DetallePartidoActivity extends AppCompatActivity {
         equipo_b.setText(partido.getTeamB());
         jugadores_max.setText("Máxmimos Jugadores: "+partido.getMaxPlayers());
 
-
+        //Gestión botón flotante
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_partidos);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetallePartidoActivity.this, EditarPartidoActivity.class);
+                intent.putExtra("numeroPartido", posicion);
+                intent.putExtra("editar", true);
+                startActivity(intent);
+            }
+        });
 
 
     }
