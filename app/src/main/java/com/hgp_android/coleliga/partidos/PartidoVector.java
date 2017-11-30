@@ -40,10 +40,10 @@ public class PartidoVector {
     public static ArrayList<Partido> partidosMock() {
         ArrayList<Partido> partidos = new ArrayList<Partido>();
 
-        partidos.add(new Partido("Partido 1",new Date(),10));
-        partidos.add(new Partido("Partido 2",new Date(),10));
-        partidos.add(new Partido("Partido 3",new Date(),10));
-        partidos.add(new Partido("Partido 4",new Date(),10));
+        partidos.add(new Partido("Partido 1",new Date(),"Manolete Team","algo Team","Instalaciones deportivas Max",10));
+        partidos.add(new Partido("Partido 2",new Date(),"Manolete Team","algo Team","Instalaciones deportivas Max",10));
+        partidos.add(new Partido("Partido 3",new Date(),"Manolete Team","algo Team","Instalaciones deportivas Max",10));
+        partidos.add(new Partido("Partido 4",new Date(),"Manolete Team","algo Team","Instalaciones deportivas Max",10));
 
         return partidos;
     }
