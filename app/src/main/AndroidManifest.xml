@@ -93,6 +93,12 @@
         <activity android:name=".PrincipalActivity"
             android:label="Pantalla Principal"
             android:screenOrientation="portrait" />
+        <activity android:name=".lugares.PlaceListActivity"></activity>
+
+        <activity android:name=".partidos.PartidosActivity" android:label="Lista de Partidos"/>
+        <activity android:name=".partidos.DetallePartidoActivity" android:label="Detalle Partido"/>
+        <activity android:name=".partidos.EditarPartidoActivity" android:label="Editar Partido"/>
+
     </application>
 
 </manifest>
