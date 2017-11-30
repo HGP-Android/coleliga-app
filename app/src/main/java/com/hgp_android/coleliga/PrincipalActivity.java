@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.hgp_android.coleliga.lugares.PlaceListActivity;
+import com.hgp_android.coleliga.partidos.PartidosActivity;
 
 public class PrincipalActivity extends AppCompatActivity {
 
@@ -68,6 +69,9 @@ public class PrincipalActivity extends AppCompatActivity {
         Toast.makeText(this,"Entrenamiento",Toast.LENGTH_SHORT).show();
     }
     void lanzarPartidos(View view){
+        Intent i = new Intent(this,
+                PartidosActivity.class);
+        startActivity(i);
         Toast.makeText(this,"Partido",Toast.LENGTH_SHORT).show();
 
     }
