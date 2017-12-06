@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Ingresa tu correo electrónico"
+        android:text="@string/ingresa_correo"
         android:textColor="@color/black" />
 
     <EditText
@@ -15,14 +15,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:inputType="textEmailAddress"
-        android:hint="Correo electrónico"
+        android:hint="@string/correo_electronico"
         android:paddingBottom="15dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Ingresa la contraseña"
+        android:text="@string/ingresa_contrasena"
         android:textColor="@color/black" />
 
     <EditText
@@ -30,13 +30,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:inputType="textPassword"
-        android:hint="Contraseña"
+        android:hint="@string/contrasena"
         android:paddingBottom="15dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crear Cuenta"
+        android:text="@string/crear_cuenta"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:paddingBottom="20dp"

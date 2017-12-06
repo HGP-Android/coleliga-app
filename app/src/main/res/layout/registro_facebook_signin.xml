@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingBottom="30dp"
-        android:text="Continuar como MAX"
+        android:text="@string/continuar_como_max"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingBottom="50dp"
-        android:text="Coleliga recibirá tu perfil público y dirección de correo electrónico"
+        android:text="@string/coleliga_recibira_perfil"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp" />
@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="Continuar"
+        android:text="@string/continuar"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"

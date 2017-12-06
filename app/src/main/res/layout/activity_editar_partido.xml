@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Nombre del Partido"
+                android:hint="@string/nombre_del_partido"
                 android:inputType="text"
                 android:singleLine="true"
                 android:textSize="30sp"/>
@@ -62,7 +62,7 @@
                 android:id="@+id/logo_lugar"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/ic_place_black_24dp" />
 
             <android.support.design.widget.TextInputLayout
@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Lugar"
+                    android:hint="@string/lugar"
                     android:inputType="text"
                     android:singleLine="true"
                     android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -99,7 +99,7 @@
                 android:id="@+id/logo_fecha"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la fecha"
+                android:contentDescription="@string/logo_de_la_fecha"
                 android:src="@android:drawable/ic_menu_today" />
 
             <android.support.design.widget.TextInputLayout
@@ -113,7 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="dd/MM/aaaa HH:mm"
+                    android:hint="@string/dd_mm_aaaa_hh_mm"
                     android:inputType="text"
                     android:singleLine="true"
                     android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -143,7 +143,7 @@
                     android:id="@+id/logo_equipo_a"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="logo de la direccion"
+                    android:contentDescription="@string/logo_direccion"
                     android:src="@drawable/ic_escudo" />
 
                 <android.support.design.widget.TextInputLayout
@@ -157,7 +157,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Equipo A"
+                        android:hint="@string/equipo_a"
                         android:inputType="text"
                         android:singleLine="true"
                         android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -182,7 +182,7 @@
                     android:id="@+id/logo_equipo_b"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="logo de la direccion"
+                    android:contentDescription="@string/logo_direccion"
                     android:src="@drawable/ic_escudo2" />
 
                 <android.support.design.widget.TextInputLayout
@@ -196,7 +196,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Equipo B"
+                        android:hint="@string/equipo_b"
                         android:inputType="text"
                         android:singleLine="true"
                         android:textAppearance="?android:attr/textAppearanceMedium"/>
@@ -220,7 +220,7 @@
                 android:id="@+id/logo_jugadores_max"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/jugador" />
 
             <android.support.design.widget.TextInputLayout
@@ -234,7 +234,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Cantidad máxima de jugadores"
+                    android:hint="@string/cantidad_maxima_de_jugadores"
                     android:inputType="text"
                     android:singleLine="true"
                     android:textAppearance="?android:attr/textAppearanceMedium"/>

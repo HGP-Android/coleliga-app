@@ -30,8 +30,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:contentDescription="Nombre del equipo"
-            android:hint="Nombre del equipo"
+
+            android:hint="@string/nombre_del_equipo"
             android:imeOptions="actionNext"
             android:inputType="text"
             android:maxLines="1"
@@ -57,7 +57,7 @@
                 android:id="@+id/logo_categoria"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/categoria" />
 
             <android.support.v7.widget.AppCompatSpinner
@@ -87,7 +87,7 @@
                 android:id="@+id/logo_entrenador"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/entrenador" />
 
             <EditText
@@ -97,7 +97,7 @@
                 android:layout_gravity="bottom"
                 android:maxLines="1"
                 android:inputType="text"
-                android:hint="Indica el entrenador, por defecto serás tu!!"
+                android:hint="@string/entrenador"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:imeOptions="actionNext"/>
         </LinearLayout>
@@ -118,7 +118,7 @@
                 android:id="@+id/logo_direccion"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@android:drawable/ic_dialog_map" />
 
             <EditText
@@ -128,7 +128,7 @@
                 android:layout_gravity="bottom"
                 android:maxLines="1"
                 android:inputType="text"
-                android:hint="Indica de donde es el equipo"
+                android:hint="@string/donde_es_equipo"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:imeOptions="actionNext"/>
         </LinearLayout>
@@ -149,7 +149,7 @@
                 android:id="@+id/logo_jugadores_max"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/jugador" />
 
             <EditText
@@ -157,7 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:hint="Indica los jugadores máximos"
+                android:hint="@string/jugadores_maximo"
                 android:maxLines="1"
                 android:inputType="number"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -173,7 +173,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Aceptar"
+            android:text="@string/accion_aceptar"
             android:onClick="Confirmar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

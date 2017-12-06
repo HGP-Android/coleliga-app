@@ -29,8 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:contentDescription="Nombre del equipo"
-        android:text="TextView"
+        android:contentDescription="@string/nombre_del_equipo"
+        android:text="@string/nombre_del_equipo"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -53,7 +53,7 @@
             android:id="@+id/logo_categoria"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:contentDescription="logo de la direccion"
+            android:contentDescription="@string/logo_direccion"
             android:src="@drawable/categoria" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Sénior"
+            android:text="@string/senior"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -81,7 +81,7 @@
             android:id="@+id/logo_entrenador"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:contentDescription="logo de la direccion"
+            android:contentDescription="@string/logo_direccion"
             android:src="@drawable/entrenador" />
 
         <TextView
@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Guardiola"
+            android:text="@string/guardiola"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -109,7 +109,7 @@
             android:id="@+id/logo_direccion"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:contentDescription="logo de la direccion"
+            android:contentDescription="@string/logo_direccion"
             android:src="@android:drawable/ic_menu_myplaces" />
 
         <TextView
@@ -117,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Avda. Casalduch 29D, 9º 18 12005 Castelló"
+            android:text="@string/direccion1"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -137,7 +137,7 @@
             android:id="@+id/logo_jugadores_max"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:contentDescription="logo de la direccion"
+            android:contentDescription="@string/logo_direccion"
             android:src="@drawable/jugador" />
 
         <TextView
@@ -145,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="16 de 24 posibles"
+            android:text="@string/posibles"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
     <android.support.design.widget.FloatingActionButton

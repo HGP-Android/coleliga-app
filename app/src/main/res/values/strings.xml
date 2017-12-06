@@ -1,48 +1,107 @@
 <resources>
-    <string name="app_name">coleliga</string>
+    <string name="app_name">"coleliga"</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">"Open navigation drawer"</string>
+    <string name="navigation_drawer_close">"Close navigation drawer"</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="categorias">Elige Categoría</string>
+    <string name="action_settings">"Settings"</string>
+    <string name="categorias">"Choose Category"</string>
 
 
-    <string name="tipo_identificacion_prompt">Selecciona un Tipo de Identificación</string>
+    <string name="tipo_identificacion_prompt">"Select an Identification Type"</string>
     <string-array name="tipo_identificacion">
-        <item>DNI</item>
-        <item>CIF</item>
-        <item>PASAPORTE</item>
+        <item>"National ID"</item>
+        <item>"CIF"</item>
+        <item>"PASSPORT"</item>
     </string-array>
 
 
-    <string name="modalidad">Modalidad</string>
-    <string name="modoliguilla">Liguilla</string>
-    <string name="modoliguilladesc">Sistema de todos contra todos, los participantes se enfrentan entre ellos en un número constante de oportunidades.</string>
-    <string name="modoeliminatoria">Eliminatoria</string>
-    <string name="modoeliminatoriadesc">Sistema de eliminación directa, el perdedor de un encuentro queda  eliminado, mientras que el ganador avanza a la siguiente fase. Se van jugando rondas.</string>
-    <string name="modoeliminaciondirecta">Eliminación directa</string>
-    <string name="modoeliminaciondirectadesc">Sistema .</string>
-    <string name="modomixta">Mixta</string>
-    <string name="modomixtadesc">Descripcion Mixta</string>
-    <string name="modomanual">Manual</string>
-    <string name="modomanualdesc">Descripción Manual</string>
+    <string name="modalidad">"Method"</string>
+    <string name="modoliguilla">"Liguilla"</string>
+    <string name="modoliguilladesc">"System of all against all; all the participants of the tournament will confront between them in an opportunity"</string>
+    <string name="modoeliminatoria">"Play off"</string>
+    <string name="modoeliminatoriadesc">"Direct elimination system, the loser of a match is eliminated, while the winner advances to the next phase. Rounds are played."</string>
+    <string name="modoeliminaciondirecta">"Direct elimination"</string>
+    <string name="modoeliminaciondirectadesc">"System"</string>
+    <string name="modomixta">"Mixed"</string>
+    <string name="modomixtadesc">"Description"</string>
+    <string name="modomanual">"Manual"</string>
+    <string name="modomanualdesc">"Description"</string>
 
-    <string name="accion_cancelar">Cancelar</string>
-    <string name="accion_aceptar">Aceptar</string>
+    <string name="accion_cancelar">"Cancel"</string>
+    <string name="accion_aceptar">"OK"</string>
 
-    <string name="op_privado">Privado</string>
-    <string name="op_publico">Público</string>
+    <string name="op_privado">"Private"</string>
+    <string name="op_publico">"Public"</string>
 
-    <string name="hint_nomtorneo">Nombre del torneo</string>
-    <string name="hint_precio">10.00</string>
-    <string name="hint_organizador">Nombre del Organizador</string>
+    <string name="hint_nomtorneo">"Name of the tournament"</string>
+    <string name="hint_precio">"10.00"</string>
+    <string name="hint_organizador">"Name of the Organizer"</string>
 
-    <string name="equipo">Equipo</string>
-    <string name="pj">J</string>
-    <string name="pg">G</string>
-    <string name="pp">P</string>
-    <string name="pts">PTS</string>
-    <string name="pe">E</string>
+    <string name="equipo">"Team"</string>
+    <string name="pj">"J"</string>
+    <string name="pg">"G"</string>
+    <string name="pp">"P"</string>
+    <string name="pts">"PTS"</string>
+    <string name="pe">"I: 4650?"</string>
+    <string name="nombre_del_equipo">"Name of the team"</string>
+    <string name="logo_direccion">"address logo"</string>
+    <string name="entrenador">"Indicates the trainer, by default you will be your!"</string>
+    <string name="donde_es_equipo">"Indicates where the team is from"</string>
+    <string name="jugadores_maximo">"Indicates the maximum players"</string>
+    <string name="mis_equipos">"My teams"</string>
+    <string name="entrenamientos">"Training"</string>
+    <string name="mis_partidos">"My matches"</string>
+    <string name="resultados">"Results"</string>
+    <string name="clasificaciones">"Classifications"</string>
+    <string name="instalaciones">"Installations"</string>
+    <string name="mi_perfil">"My profile"</string>
+    <string name="posibles">"16 of 24 possible"</string>
+    <string name="direccion1">"Avda. Casalduch 29D, 9º 18 12005 Castelló"</string>
+    <string name="senior">"Senior"</string>
+    <string name="guardiola">"Guardiola"</string>
+    <string name="nombre_del_partido">"Name of the Match"</string>
+    <string name="lugar">"Place"</string>
+    <string name="logo_de_la_fecha">"date logo"</string>
+    <string name="dd_mm_aaaa_hh_mm">"dd / MM / yyyy HH: mm"</string>
+    <string name="equipo_a">"Team A"</string>
+    <string name="equipo_b">"Team B"</string>
+    <string name="cantidad_maxima_de_jugadores">"Maximum number of players"</string>
+    <string name="fecha1">"16/11/2017"</string>
+    <string name="vs">"VS"</string>
+    <string name="nombre_lugar">"Place name"</string>
+    <string name="direccion2">"C / Paloma Blanca 12, 28021. Madrid"</string>
+    <string name="descripcion_lugar1">"More than 4 tracks (soccer 11) available. Regulatory measures"</string>
+    <string name="web">"WEB"</string>
+    <string name="de_10_00h_20_00h">"from 10: 00H / 20: 00H"</string>
+    <string name="telefono">"Phone"</string>
+    <string name="crear_cuenta">"Create Account"</string>
+    <string name="contrasena">"Password"</string>
+    <string name="ingresa_contrasena">"Enter the password"</string>
+    <string name="correo_electronico">"E-mail"</string>
+    <string name="ingresa_correo">"Enter your email"</string>
+
+    <string name="google">"Google"</string>
+    <string name="facebook">"Facebook"</string>
+    <string name="coleliga">"COLELIGA"</string>
+    <string name="acceder">"TO ACCESS"</string>
+    <string name="user_name">"User Name"</string>
+    <string name="password">"Password"</string>
+    <string name="forgot_password">"Forgot Password?"</string>
+
+    <string name="register">"Register"</string>
+    <string name="correo_telefono">"e-mail or telephone"</string>
+    <string name="ingresa_la_contrasena">"Enter the password"</string>
+
+    <string name="iniciar_sesion">"Log in"</string>
+    <string name="ahora_no">"Not now"</string>
+    <string name="continuar_como_max">"Continue as MAX"</string>
+    <string name="coleliga_recibira_perfil">"Coleliga will receive your public profile and email address"</string>
+    <string name="continuar">"Continue"</string>
+    <string name="soy_organizador">"I AM ORGANIZER"</string>
+    <string name="soy_dueno_de_lugar">"I AM THE OWNER OF PLACE"</string>
+    <string name="soy_jugador">"I AM A PLAYER"</string>
+    <string name="soy_entrenador">"I AM A TRAINER"</string>
+
 
 </resources>

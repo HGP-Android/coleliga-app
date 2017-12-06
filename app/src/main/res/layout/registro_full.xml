@@ -27,7 +27,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SOY JUGADOR"
+                    android:text="@string/soy_jugador"
                     android:layout_gravity="center"/>
             </LinearLayout>
 
@@ -47,7 +47,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SOY ENTRENADOR"
+                    android:text="@string/soy_entrenador"
                     android:layout_gravity="center"/>
             </LinearLayout>
 
@@ -70,7 +70,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SOY DUEÑO DE LUGAR"
+                    android:text="@string/soy_dueno_de_lugar"
                     android:layout_gravity="center"/>
             </LinearLayout>
 
@@ -89,7 +89,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SOY ORGANIZADOR"
+                    android:text="@string/soy_organizador"
                     android:layout_gravity="center"/>
             </LinearLayout>
 
