@@ -23,60 +23,61 @@
         </activity>
         <activity
             android:name=".EquiposActivity"
-            android:label="Listado de equipos"
+            android:label="@string/name_activity_listado_equipo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".VistaEquipoActivity"
-            android:label="Equipo"
+            android:label="@string/name_activity_equipo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".EditarEquipoActivity"
-            android:label="Editar Equipo"
+            android:label="@string/name_activity_editar_equipo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroGoogle"
-            android:label="Google"
+            android:label="@string/google"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Dialog" />
         <activity
             android:name=".RegistroFacebbok"
-            android:label="Facebook"
+            android:label="@string/facebook"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFacebookSignIn"
-            android:label="Facebook"
+            android:label="@string/facebook"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroLogin"
-            android:label="Login"
-            android:screenOrientation="portrait" />
+            android:label="@string/name_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/RegistroTheme"/>
         <activity
             android:name=".RegistroSignUp"
-            android:label="Crear Cuenta"
+            android:label="@string/name_activity_crear_cuenta"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFull"
-            android:label="Selecciona tu perfil"
+            android:label="@string/name_activity_selecciona_perfil"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFullJugador"
-            android:label="Jugador Nuevo"
+            android:label="@string/name_activity_jugador_nuevo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFullDuenio"
-            android:label="Dueño de Lugar Nuevo"
+            android:label="@string/name_activity_dueno_nuevo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFullEntrenador"
-            android:label="Entrenador Nuevo"
+            android:label="@string/name_activity_entrenador_nuevo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFullOrganizador"
-            android:label="Organizador Nuevo"
+            android:label="@string/name_activity_organizador_nuevo"
             android:screenOrientation="portrait" />
         <activity
             android:name=".player.PlayerListActivity"
-            android:label="Lista de jugadores"
+            android:label="@string/name_activity_lista_jugadores"
             android:screenOrientation="portrait" />
         <activity
             android:name=".player.PlayerDetailActivity"
@@ -87,12 +88,12 @@
         <activity android:name=".ListaClasificacionesTorneo" />
         <activity android:name=".lugares.PlaceListActivity" />
         <activity android:name=".PrincipalActivity"
-            android:label="Pantalla Principal"
+            android:label="@string/name_activity_pantalla_principal"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".partidos.PartidosActivity" android:label="Lista de Partidos"/>
-        <activity android:name=".partidos.DetallePartidoActivity" android:label="Detalle Partido"/>
-        <activity android:name=".partidos.EditarPartidoActivity" android:label="Editar Partido"/>
+        <activity android:name=".partidos.PartidosActivity" android:label="@string/name_activity_lista_partidos"/>
+        <activity android:name=".partidos.DetallePartidoActivity" android:label="@string/name_activity_detalle_partido"/>
+        <activity android:name=".partidos.EditarPartidoActivity" android:label="@string/name_activity_editar_partido"/>
 
         <activity android:name=".TorneoModalidad"></activity>
         <activity android:name=".Splash"

@@ -19,6 +19,7 @@
 
     <!--Tema full screen para el activity de registo-->
     <style name="RegistroTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>

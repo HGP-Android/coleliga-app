@@ -4,165 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
-    android:background="@drawable/degradado"
-    android:layout_height="wrap_content" >
-<android.support.constraint.ConstraintLayout
-
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/degradado"
-    tools:context="com.hgp_android.coleliga.VistaEquipoActivity">
+    android:background="@drawable/degradado">
 
-    <ImageView
-        android:id="@+id/escudo"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_escudo"
-        android:elevation="4dp"/>
+    <android.support.constraint.ConstraintLayout
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/nombre_del_equipo"
-        android:text="@string/nombre_del_equipo"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/escudo" />
-
-
-    <LinearLayout
-        android:id="@+id/barra_categoria"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo">
+        android:layout_height="match_parent"
+        android:background="@drawable/degradado"
+        tools:context="com.hgp_android.coleliga.VistaEquipoActivity">
 
         <ImageView
-            android:id="@+id/logo_categoria"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/logo_direccion"
-            android:src="@drawable/categoria" />
+            android:id="@+id/escudo"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:elevation="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_escudo" />
 
         <TextView
-            android:id="@+id/categoria"
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/nombre_del_equipo"
+            android:text="@string/nombre_del_equipo"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/escudo" />
+
+
+        <LinearLayout
+            android:id="@+id/barra_categoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="@string/senior"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo">
 
-    <LinearLayout
-        android:id="@+id/barra_entrenador"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barra_categoria">
+            <ImageView
+                android:id="@+id/logo_categoria"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/logo_direccion"
+                android:src="@drawable/categoria" />
 
-        <ImageView
-            android:id="@+id/logo_entrenador"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/logo_direccion"
-            android:src="@drawable/entrenador" />
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/senior"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/entrenador"
+        <LinearLayout
+            android:id="@+id/barra_entrenador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="@string/guardiola"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_categoria">
 
-    <LinearLayout
-        android:id="@+id/barra_direccion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barra_entrenador">
+            <ImageView
+                android:id="@+id/logo_entrenador"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/logo_direccion"
+                android:src="@drawable/entrenador" />
 
-        <ImageView
-            android:id="@+id/logo_direccion"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/logo_direccion"
-            android:src="@android:drawable/ic_menu_myplaces" />
+            <TextView
+                android:id="@+id/entrenador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/guardiola"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/direccion"
+        <LinearLayout
+            android:id="@+id/barra_direccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="@string/direccion1"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_entrenador">
 
-    <LinearLayout
-        android:id="@+id/barra_jugadores_max"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barra_direccion">
+            <ImageView
+                android:id="@+id/logo_direccion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/logo_direccion"
+                android:src="@android:drawable/ic_menu_myplaces" />
 
-        <ImageView
-            android:id="@+id/logo_jugadores_max"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/logo_direccion"
-            android:src="@drawable/jugador" />
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/direccion1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/jugadores_max"
+        <LinearLayout
+            android:id="@+id/barra_jugadores_max"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="@string/posibles"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-    </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:clickable="true"
-        app:elevation="6dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barra_direccion">
 
-        app:layout_anchorGravity="bottom|end"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+            <ImageView
+                android:id="@+id/logo_jugadores_max"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/logo_direccion"
+                android:src="@drawable/jugador" />
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/jugadores_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/posibles"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            app:elevation="6dp"
+
+            app:layout_anchorGravity="bottom|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    </android.support.constraint.ConstraintLayout>
 </ScrollView>

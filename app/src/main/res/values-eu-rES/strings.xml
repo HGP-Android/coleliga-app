@@ -31,12 +31,14 @@
 
     <string name="accion_cancelar">Cancelar</string>
     <string name="accion_aceptar">Aceptar</string>
+    <string name="accion_actualizar">"Actualizar"</string>
+    <string name="accion_crear">"Crear"</string>
 
     <string name="op_privado">Privado</string>
     <string name="op_publico">Público</string>
 
     <string name="hint_nomtorneo">Nombre del torneo</string>
-    <string name="hint_precio">10.00</string>
+
     <string name="hint_organizador">Nombre del Organizador</string>
 
     <string name="equipo">Equipo</string>
@@ -84,6 +86,7 @@
 
     <string name="google">Google</string>
     <string name="facebook">Facebook</string>
+
     <string name="coleliga">COLELIGA</string>
     <string name="acceder">ACCEDER</string>
     <string name="user_name">User Name</string>
@@ -103,6 +106,23 @@
     <string name="soy_dueno_de_lugar">SOY DUEÑO DE LUGAR</string>
     <string name="soy_jugador">SOY JUGADOR</string>
     <string name="soy_entrenador">SOY ENTRENADOR</string>
+
+    <string name="name_activity_lista_partidos">Lista de Partidos</string>
+    <string name="name_activity_detalle_partido">Detalle Partido</string>
+    <string name="name_activity_editar_partido">Editar Partido</string>
+    <string name="name_activity_pantalla_principal">Principal</string>
+    <string name="name_activity_lista_jugadores">Lista de jugadores</string>
+    <string name="name_activity_organizador_nuevo">Organizador Nuevo</string>
+    <string name="name_activity_entrenador_nuevo">Entrenador Nuevo</string>
+    <string name="name_activity_dueno_nuevo">Dueño de Lugar Nuevo</string>
+    <string name="name_activity_jugador_nuevo">Jugador Nuevo</string>
+    <string name="name_activity_selecciona_perfil">Selecciona tu perfil</string>
+    <string name="name_activity_crear_cuenta">Crear Cuenta</string>
+    <string name="name_activity_login">Login</string>
+
+    <string name="name_activity_editar_equipo">Editar Equipo</string>
+    <string name="name_activity_equipo">Equipo</string>
+    <string name="name_activity_listado_equipo">Listado de equipos</string>
 
 
 </resources>

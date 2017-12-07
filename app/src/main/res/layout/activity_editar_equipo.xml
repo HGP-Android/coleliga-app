@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/degradado">
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,8 +19,8 @@
             android:layout_height="128dp"
             android:layout_marginTop="8dp"
             android:elevation="6dp"
-            android:scaleType="centerCrop"
             android:onClick="CargaImagen"
+            android:scaleType="centerCrop"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -65,10 +66,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:prompt="@string/categorias"
                 android:entries="@array/tiposCategorias"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext"
+                android:prompt="@string/categorias"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,11 +96,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:maxLines="1"
-                android:inputType="text"
                 android:hint="@string/entrenador"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,11 +127,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:maxLines="1"
-                android:inputType="text"
                 android:hint="@string/donde_es_equipo"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:imeOptions="actionNext"/>
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 
         <LinearLayout
@@ -158,28 +159,27 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:hint="@string/jugadores_maximo"
-                android:maxLines="1"
+                android:imeOptions="actionDone"
                 android:inputType="number"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:imeOptions="actionDone"/>
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 
         <Button
             android:id="@+id/aceptar"
-            android:background="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="@string/accion_aceptar"
+            android:background="@color/colorAccent"
             android:onClick="Confirmar"
+            android:text="@string/accion_aceptar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/barra_jugadores_max" />
-
 
 
     </android.support.constraint.ConstraintLayout>

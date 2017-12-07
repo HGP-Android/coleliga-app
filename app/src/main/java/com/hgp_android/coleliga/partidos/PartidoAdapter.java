@@ -58,6 +58,6 @@ public class PartidoAdapter extends
     @Override public void onBindViewHolder(PartidoAdapter.ListaViewHolder viewHolder, int i) {
         viewHolder.nickname_partido.setText(partidos.elemento(i).getNicknamePartido());
         viewHolder.fecha_partido.setText(partidos.elemento(i).getFecha());
-        viewHolder.jugadores_partido.setText("Máxmimos Jugadores: " + partidos.elemento(i).getMaxPlayers());
+        viewHolder.jugadores_partido.setText("Máximo de Jugadores: " + partidos.elemento(i).getMaxPlayers());
     }
 }

@@ -5,13 +5,13 @@
     <string name="navigation_drawer_open">"Ouvrez le tiroir de navigation"</string>
     <string name="navigation_drawer_close">"Fermer le tiroir de navigation"</string>
 
-    <string name="action_settings">"réglages"</string>
+    <string name="action_settings">"Réglages"</string>
     <string name="categorias">"Choisir une catégorie"</string>
 
 
-    <string name="tipo_identificacion_prompt">"Sélectionnez un type d'identification"</string>
+    <string name="tipo_identificacion_prompt">"Sélectionnez un type d\'identification"</string>
     <string-array name="tipo_identificacion">
-        <item>"Carte Nationale d'Identité"</item>
+        <item>"Carte Nationale d\'Identité"</item>
         <item>"CIF"</item>
         <item>"PASSEPORT"</item>
     </string-array>
@@ -19,10 +19,10 @@
 
     <string name="modalidad">"Méthode"</string>
     <string name="modoliguilla">"Liguilla"</string>
-    <string name="modoliguilladesc">"Système de tous contre tous; tous les participants du tournoi seront les confronter à l'occasion entre"</string>
+    <string name="modoliguilladesc">"Système de tous contre tous; tous les participants du tournoi seront les confronter à l\'occasion entre"</string>
     <string name="modoeliminatoria">"Play off"</string>
-    <string name="modoeliminatoriadesc">"Système d'élimination directe, le perdant d'un match est éliminé, alors que le gagnant avance à la phase suivante. Les rounds sont joués."</string>
-    <string name="modoeliminaciondirecta">"élimination directe"</string>
+    <string name="modoeliminatoriadesc">"Système d\'élimination directe, le perdant d\'un match est éliminé, alors que le gagnant avance à la phase suivante. Les rounds sont joués."</string>
+    <string name="modoeliminaciondirecta">Élimination directe</string>
     <string name="modoeliminaciondirectadesc">"Description"</string>
     <string name="modomixta">"Mixte"</string>
     <string name="modomixtadesc">"Description"</string>
@@ -31,21 +31,23 @@
 
     <string name="accion_cancelar">"Annuler"</string>
     <string name="accion_aceptar">"OK"</string>
+    <string name="accion_actualizar">"Mettre à jour"</string>
+    <string name="accion_crear">"Créer"</string>
 
     <string name="op_privado">"Privé"</string>
     <string name="op_publico">"Public"</string>
 
     <string name="hint_nomtorneo">"Nom du tournoi"</string>
-    <string name="hint_precio">"06/12/2017"</string>
+
     <string name="hint_organizador">"Nom de l'Organisateur"</string>
 
-    <string name="equipo">"équipe"</string>
+    <string name="equipo">Équipe</string>
     <string name="pj">"J"</string>
     <string name="pg">"G"</string>
-    <string name="pp">"P"</string>
+    <string name="pp">P</string>
     <string name="pts">"PTS"</string>
-    <string name="pe">"PE"</string>
-    <string name="nombre_del_equipo">"Nom de l'équipe"</string>
+    <string name="pe">N</string>
+    <string name="nombre_del_equipo">"Nom de l\'équipe"</string>
     <string name="logo_direccion">"logo adresse"</string>
     <string name="entrenador">"Indique le entreneîteur, par défaut, vous serez!"</string>
     <string name="donde_es_equipo">"Quelle est ville de ton équipe? "</string>
@@ -65,8 +67,8 @@
     <string name="lugar">"Lieu"</string>
     <string name="logo_de_la_fecha">"Date logo"</string>
     <string name="dd_mm_aaaa_hh_mm">"JJ / MM / AAAA HH: mm"</string>
-    <string name="equipo_a">"L'équipe A"</string>
-    <string name="equipo_b">"L'équipe B"</string>
+    <string name="equipo_a">"L\'équipe A"</string>
+    <string name="equipo_b">"L\'équipe B"</string>
     <string name="cantidad_maxima_de_jugadores">"Nombre maximum de joueurs"</string>
     <string name="fecha1">"16/11/2017"</string>
     <string name="vs">"VS"</string>
@@ -97,12 +99,29 @@
     <string name="iniciar_sesion">"Connecte"</string>
     <string name="ahora_no">"Pas maintenant"</string>
     <string name="continuar_como_max">"Continuer comme MAX"</string>
-    <string name="coleliga_recibira_perfil">"Coleliga recevra votre profil public et l'adresse e-mail"</string>
-    <string name="continuar">"continuer"</string>
+    <string name="coleliga_recibira_perfil">"Coleliga recevra votre profil public et l\'adresse e-mail"</string>
+    <string name="continuar">"Continuer"</string>
     <string name="soy_organizador">"JE SUIS ORGANISATEUR"</string>
     <string name="soy_dueno_de_lugar">"JE SUIS PROPRIETAIRE DE PLACE"</string>
     <string name="soy_jugador">"JE SUIS UN JOUEUR"</string>
     <string name="soy_entrenador">"JE SUIS UN COACH"</string>
 
+
+    <string name="name_activity_lista_partidos">Liste de Matchs </string>
+    <string name="name_activity_detalle_partido">Détails du match </string>
+    <string name="name_activity_editar_partido">Modifier le match </string>
+    <string name="name_activity_pantalla_principal">Main </string>
+    <string name="name_activity_lista_jugadores">Liste des joueurs </string>
+    <string name="name_activity_organizador_nuevo">Organisateur Nouveau </string>
+    <string name="name_activity_entrenador_nuevo">Nouveau formateur </string>
+    <string name="name_activity_dueno_nuevo">Nouveau propriétaire du lieu </string>
+    <string name="name_activity_jugador_nuevo">Nouveau joueur </string>
+    <string name="name_activity_selecciona_perfil">Sélectionnez votre profil </string>
+    <string name="name_activity_crear_cuenta">Créer un compte </string>
+    <string name="name_activity_login">Login</string>
+
+    <string name="name_activity_editar_equipo">Modifier l\'équipe </string>
+    <string name="name_activity_equipo">Équipe </string>
+    <string name="name_activity_listado_equipo">Liste d\'équipement </string>
 
 </resources>

@@ -30,6 +30,8 @@
 
     <string name="accion_cancelar">"Cancel"</string>
     <string name="accion_aceptar">"OK"</string>
+    <string name="accion_actualizar">"Update"</string>
+    <string name="accion_crear">"Create"</string>
 
     <string name="op_privado">"Private"</string>
     <string name="op_publico">"Public"</string>
@@ -38,12 +40,12 @@
     <string name="hint_precio">"10.00"</string>
     <string name="hint_organizador">"Name of the Organizer"</string>
 
-    <string name="equipo">"Team"</string>
-    <string name="pj">"J"</string>
-    <string name="pg">"G"</string>
-    <string name="pp">"P"</string>
+    <string name="equipo">"Teams"</string>
+    <string name="pj">"MP"</string>
+    <string name="pg">W</string>
+    <string name="pp">"L"</string>
     <string name="pts">"PTS"</string>
-    <string name="pe">"I: 4650?"</string>
+    <string name="pe">"D"</string>
     <string name="nombre_del_equipo">"Name of the team"</string>
     <string name="logo_direccion">"address logo"</string>
     <string name="entrenador">"Indicates the trainer, by default you will be your!"</string>
@@ -73,7 +75,7 @@
     <string name="direccion2">"C / Paloma Blanca 12, 28021. Madrid"</string>
     <string name="descripcion_lugar1">"More than 4 tracks (soccer 11) available. Regulatory measures"</string>
     <string name="web">"WEB"</string>
-    <string name="de_10_00h_20_00h">"from 10: 00H / 20: 00H"</string>
+    <string name="de_10_00h_20_00h">"from 10:00H / 20:00H"</string>
     <string name="telefono">"Phone"</string>
     <string name="crear_cuenta">"Create Account"</string>
     <string name="contrasena">"Password"</string>
@@ -103,5 +105,22 @@
     <string name="soy_jugador">"I AM A PLAYER"</string>
     <string name="soy_entrenador">"I AM A TRAINER"</string>
 
+
+    <string name="name_activity_lista_partidos">List of Matches </string>
+    <string name="name_activity_detalle_partido"> Match Detail </string>
+    <string name="name_activity_editar_partido">Edit Match </string>
+    <string name="name_activity_pantalla_principal">Main </string>
+    <string name="name_activity_lista_jugadores"> List of players </string>
+    <string name="name_activity_organizador_nuevo">Organizer New </string>
+    <string name="name_activity_entrenador_nuevo">New Trainer </string>
+    <string name="name_activity_dueno_nuevo">New Place Owner </string>
+    <string name="name_activity_jugador_nuevo">New Player </string>
+    <string name="name_activity_selecciona_perfil">Select your profile </string>
+    <string name="name_activity_crear_cuenta">Create Account </string>
+    <string name="name_activity_login">Login</string>
+
+    <string name="name_activity_editar_equipo">Edit Team </string>
+    <string name="name_activity_equipo">Team </string>
+    <string name="name_activity_listado_equipo">Equipment list </string>
 
 </resources>

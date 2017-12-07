@@ -8,8 +8,8 @@
     android:background="@drawable/degradado">
 
     <android.support.v7.widget.CardView
-        style="@style/CardView.MyBlue"
         android:id="@+id/cv_liguilla"
+        style="@style/CardView.MyBlue"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
@@ -19,6 +19,8 @@
         android:onClick="Liguilla"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toStartOf="@+id/cv_eliminatoria"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -63,17 +65,17 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        style="@style/CardView.MyBlue"
         android:id="@+id/cv_eliminatoria"
+        style="@style/CardView.MyBlue"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginEnd="16dp"
         android:onClick="Eliminatoria"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cv_liguilla"
-        android:layout_marginRight="16dp">
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cv_liguilla"
+        app:layout_constraintTop_toTopOf="@+id/cv_liguilla">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -116,8 +118,8 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        style="@style/CardView.MyBlue"
         android:id="@+id/cv_directa"
+        style="@style/CardView.MyBlue"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
@@ -127,6 +129,8 @@
         android:onClick="Directa"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toStartOf="@+id/cv_mixta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cv_liguilla">
 
@@ -172,18 +176,18 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        style="@style/CardView.MyBlue"
         android:id="@+id/cv_mixta"
+        style="@style/CardView.MyBlue"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:onClick="Mixta"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_eliminatoria"
-        android:layout_marginRight="16dp">
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cv_directa"
+        app:layout_constraintTop_toBottomOf="@+id/cv_eliminatoria">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -226,8 +230,8 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        style="@style/CardView.MyBlue"
         android:id="@+id/cv_manual"
+        style="@style/CardView.MyBlue"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"

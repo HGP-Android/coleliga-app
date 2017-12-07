@@ -41,5 +41,6 @@ public class TorneoModalidad extends AppCompatActivity {
         Intent intent = new Intent(TorneoModalidad.this, FormTorneoActivity.class);
         startActivity(intent);
     }
+    /*TODO aqui va lo generacion de las distintas modalidades */
 
 }
