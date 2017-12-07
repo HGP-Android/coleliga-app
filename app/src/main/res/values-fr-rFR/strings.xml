@@ -6,25 +6,25 @@
     <string name="navigation_drawer_close">"Fermer le tiroir de navigation"</string>
 
     <string name="action_settings">"réglages"</string>
-    <string name="categorias">"choisir une catégorie"</string>
+    <string name="categorias">"Choisir une catégorie"</string>
 
 
     <string name="tipo_identificacion_prompt">"Sélectionnez un type d'identification"</string>
     <string-array name="tipo_identificacion">
-        <item>"carte nationale d'identité"</item>
+        <item>"Carte Nationale d'Identité"</item>
         <item>"CIF"</item>
         <item>"PASSEPORT"</item>
     </string-array>
 
 
-    <string name="modalidad">"méthode"</string>
-    <string name="modoliguilla">"liguilla"</string>
+    <string name="modalidad">"Méthode"</string>
+    <string name="modoliguilla">"Liguilla"</string>
     <string name="modoliguilladesc">"Système de tous contre tous; tous les participants du tournoi seront les confronter à l'occasion entre"</string>
     <string name="modoeliminatoria">"Play off"</string>
     <string name="modoeliminatoriadesc">"Système d'élimination directe, le perdant d'un match est éliminé, alors que le gagnant avance à la phase suivante. Les rounds sont joués."</string>
     <string name="modoeliminaciondirecta">"élimination directe"</string>
     <string name="modoeliminaciondirectadesc">"Description"</string>
-    <string name="modomixta">"mixte"</string>
+    <string name="modomixta">"Mixte"</string>
     <string name="modomixtadesc">"Description"</string>
     <string name="modomanual">"Manuel"</string>
     <string name="modomanualdesc">"Description"</string>
@@ -51,8 +51,7 @@
     <string name="donde_es_equipo">"Quelle est ville de ton équipe? "</string>
     <string name="jugadores_maximo">"Indique les joueurs maximum"</string>
     <string name="mis_equipos">"Mes équipes"</string>
-    <string name="entrenamientos">"Entraînement
-"</string>
+    <string name="entrenamientos">"Entraînement"</string>
     <string name="mis_partidos">"Mes matchs"</string>
     <string name="resultados">"Résultats"</string>
     <string name="clasificaciones">"Classifications"</string>
@@ -92,7 +91,7 @@
     <string name="forgot_password">"Mot de passe oublié?"</string>
 
     <string name="register">"Register:"</string>
-    <string name="correo_telefono">"e-mail ou par téléphone"</string>
+    <string name="correo_telefono">"Email ou par Téléphone"</string>
     <string name="ingresa_la_contrasena">"Entrez le mot de passe"</string>
 
     <string name="iniciar_sesion">"Connecte"</string>
