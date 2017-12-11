@@ -63,6 +63,18 @@ public class PrincipalActivity extends AppCompatActivity {
             }
         });
 
+        CardView shareCardview = (CardView) findViewById(R.id.shareApp);
+        shareCardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String text = "Coleliga: App para crear torneos. ";
+                shareAppText(text +
+                        "Puedes descargarla en : http://play.google.com/store/apps/details?id="+
+                        getPackageName());
+            }
+        });
+
         //Lanzamiento anuncio banner
         adView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -104,4 +116,12 @@ public class PrincipalActivity extends AppCompatActivity {
                 RegistroFull.class);
         startActivity(i);
     }
+
+    void shareAppText(String text) {
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("text/plain");
+        i.putExtra(Intent.EXTRA_TEXT, text);
+        startActivity(Intent.createChooser(i, "Selecciona aplicación"));
+    }
+
 }

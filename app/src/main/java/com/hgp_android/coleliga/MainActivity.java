@@ -107,10 +107,25 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this,
                     PlaceListActivity.class);
             startActivity(i);
+        } else if (id == R.id.nav_compartir) {
+            String text = "Coleliga: App para crear torneos";
+            shareAppText(text +
+                    "Compartido por: http://play.google.com/store/apps/details?id="+
+                    getPackageName());
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    void shareAppText(String text) {
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("text/plain");
+        i.putExtra(Intent.EXTRA_TEXT, text);
+        startActivity(Intent.createChooser(i, "Selecciona aplicación"));
+    }
+
+
 }

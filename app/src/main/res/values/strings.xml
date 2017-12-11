@@ -122,5 +122,6 @@
     <string name="name_activity_editar_equipo">Edit Team </string>
     <string name="name_activity_equipo">Team </string>
     <string name="name_activity_listado_equipo">Equipment list </string>
+    <string name="share_app">Compartir app</string>
 
 </resources>
