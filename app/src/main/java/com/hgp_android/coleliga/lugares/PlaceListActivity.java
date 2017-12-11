@@ -27,7 +27,7 @@ public class PlaceListActivity extends AppCompatActivity {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(llm);
 
-        PlaceAdapter adapter = new PlaceAdapter(places);
+        PlaceAdapter adapter = new PlaceAdapter(places, this);
         recyclerView.setAdapter(adapter);
 
 
