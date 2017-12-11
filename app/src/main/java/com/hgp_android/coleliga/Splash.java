@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.google.android.gms.ads.MobileAds;
+
 /**
  * Created by AnahiAramayo on 29/11/2017.
  */
@@ -11,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 public class Splash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
         Thread timerTread = new Thread(){

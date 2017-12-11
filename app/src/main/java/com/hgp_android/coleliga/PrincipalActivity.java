@@ -7,13 +7,17 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.hgp_android.coleliga.lugares.PlaceListActivity;
 import com.hgp_android.coleliga.partidos.PartidosActivity;
 
 public class PrincipalActivity extends AppCompatActivity {
-
+    private AdView adView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        MobileAds.initialize(this,"ca-app-pub-3405615265490445~2278870838");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         CardView equipoCard = (CardView) findViewById(R.id.equiposCard);
@@ -58,6 +62,11 @@ public class PrincipalActivity extends AppCompatActivity {
                 lanzarPerfil(view);
             }
         });
+
+        //Lanzamiento anuncio banner
+        adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
     void lanzarEquipos(View view){
         Toast.makeText(this,"Equipo",Toast.LENGTH_SHORT).show();

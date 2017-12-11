@@ -89,6 +89,7 @@
         <activity android:name=".lugares.PlaceListActivity" />
         <activity android:name=".PrincipalActivity"
             android:label="@string/name_activity_pantalla_principal"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait" />
 
         <activity android:name=".partidos.PartidosActivity" android:label="@string/name_activity_lista_partidos"/>

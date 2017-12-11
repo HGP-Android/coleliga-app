@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "673767010121",
+    "firebase_url": "https://coleliga-5bbf9.firebaseio.com",
+    "project_id": "coleliga-5bbf9",
+    "storage_bucket": "coleliga-5bbf9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673767010121:android:9ba9ef83cece85ad",
+        "android_client_info": {
+          "package_name": "com.hgp.android.coleliga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673767010121-g8umdfmv9et6ran46f0br5h5gbfc0d47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKoEPwaW1X5sCNlXkEJCXUyfl5ovG2O1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
