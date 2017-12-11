@@ -37,5 +37,11 @@
     <string name="hint_nomtorneo">Nombre del torneo</string>
     <string name="hint_precio">10.00</string>
     <string name="hint_organizador">Nombre del Organizador</string>
+    <string name="placeAddName">Nombre</string>
+    <string name="btnSendPlaceAdd">Crear un nuevo lugar</string>
+    <string name="placeAddSchedule">Horario de apertura</string>
+    <string name="placeAddAddress">Dirección del lugar</string>
+    <string name="placeAddBody">Descripción</string>
+    <string name="textIntroAddPlace">Utiliza el siguiente formulario para añadir un lugar a la app.</string>
 
 </resources>

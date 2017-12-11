@@ -1,10 +1,12 @@
 package com.hgp_android.coleliga.lugares;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by paco on 19/11/17.
  */
-
-public class Place {
+public class Place implements Parcelable {
 
     String name;
     int image;
@@ -59,4 +61,39 @@ public class Place {
         this.schedule = schedule;
         this.body = body;
     }
+
+    protected Place(Parcel in) {
+        name = in.readString();
+        image = in.readInt();
+        address = in.readString();
+        schedule = in.readString();
+        body = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeInt(image);
+        dest.writeString(address);
+        dest.writeString(schedule);
+        dest.writeString(body);
+    }
+
+    @SuppressWarnings("unused")
+    public static final Parcelable.Creator<Place> CREATOR = new Parcelable.Creator<Place>() {
+        @Override
+        public Place createFromParcel(Parcel in) {
+            return new Place(in);
+        }
+
+        @Override
+        public Place[] newArray(int size) {
+            return new Place[size];
+        }
+    };
 }

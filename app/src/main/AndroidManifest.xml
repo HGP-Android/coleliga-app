@@ -89,7 +89,8 @@
         <activity android:name=".ListasTorneos" />
         <activity android:name=".FormTorneoActivity" />
         <activity android:name=".ListaClasificacionesTorneo" />
-        <activity android:name=".lugares.PlaceListActivity"></activity>
+        <activity android:name=".lugares.PlaceListActivity" />
+        <activity android:name=".lugares.PlaceAddActivity"></activity>
     </application>
 
 </manifest>
