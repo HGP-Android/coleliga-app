@@ -103,7 +103,7 @@ public class PrincipalActivity extends AppCompatActivity {
              Intent i = new Intent(PrincipalActivity.this, EquiposActivity.class);
              startActivity(i);
          }
-
+//Algo diferente
 
     }
     void lanzarEntrenamientos(View view){
