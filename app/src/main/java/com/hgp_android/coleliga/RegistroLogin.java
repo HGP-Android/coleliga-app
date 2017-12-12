@@ -14,7 +14,7 @@ public class RegistroLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registro);
+        setContentView(R.layout.registro_login);
     }
 
     public void lanzarMainDesdeLogin (View view)

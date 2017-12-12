@@ -21,7 +21,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/logotorneo" />
+        tools:src="@drawable/logotorneo"
+
+        android:transitionName="profile"
+        android:scaleType="centerCrop"
+
+        />
 
     <TextView
         android:id="@+id/nombreequipo"
@@ -38,92 +43,92 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="5dp" />
 
-    <TextView
-        android:id="@+id/partidosjugados"
-        android:layout_width="18dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/partidosganados"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="PJ"
-        android:gravity="start" />
-
-    <TextView
-        android:id="@+id/partidosganados"
-        android:layout_width="19dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/partidosempatados"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/partidosjugados"
-        app:layout_constraintTop_toTopOf="@+id/partidosjugados"
-        tools:text="PG"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
-
-    <TextView
-        android:id="@+id/partidosempatados"
-        android:layout_width="18dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/partidosperdidos"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/partidosganados"
-        app:layout_constraintTop_toTopOf="@+id/partidosjugados"
-        tools:text="PE"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
-
-    <TextView
-        android:id="@+id/partidosperdidos"
-        android:layout_width="19dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/partidospuntos"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/partidosempatados"
-        app:layout_constraintTop_toTopOf="@+id/partidosjugados"
-        tools:text="PP"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
-
-    <TextView
-        android:id="@+id/partidospuntos"
-        android:layout_width="19dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textAlignment="viewStart"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/partidosperdidos"
-        app:layout_constraintTop_toTopOf="@+id/partidosjugados"
-        tools:text="PTS"
-        android:layout_marginLeft="8dp"
-        android:gravity="start" />
-
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="237dp" />
+        app:layout_constraintGuide_begin="228dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/logoequipo">
+
+        <TextView
+            android:id="@+id/partidosjugados"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="@string/pj"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@+id/logoequipo"
+            app:layout_constraintTop_toBottomOf="@+id/p" />
+
+        <TextView
+            android:id="@+id/partidosganados"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="@string/pg"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@+id/logoequipo"
+            app:layout_constraintTop_toBottomOf="@+id/p" />
+
+        <TextView
+            android:id="@+id/partidosempatados"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="@string/pe"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@+id/logoequipo"
+            app:layout_constraintTop_toBottomOf="@+id/p" />
+
+        <TextView
+            android:id="@+id/partidosperdidos"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:text="@string/pp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@+id/logoequipo"
+            app:layout_constraintTop_toBottomOf="@+id/p" />
+
+        <TextView
+            android:id="@+id/partidospuntos"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pts"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintLeft_toRightOf="@+id/logoequipo"
+            app:layout_constraintTop_toBottomOf="@+id/p" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
 

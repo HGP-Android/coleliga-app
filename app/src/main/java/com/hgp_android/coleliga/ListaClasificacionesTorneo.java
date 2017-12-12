@@ -2,6 +2,7 @@ package com.hgp_android.coleliga;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -29,14 +30,25 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
         //Inicializar los elementos
         List items = new ArrayList();
 
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "ArdeIngenieria", "10","10","0","0","10"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Jujenios", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Jujenios", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Jujenios", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Jujenios", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Jujenios", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Profesionales de Jujuy", "18","3","14","1","36"));
+        items.add(new Clasificaciones(R.drawable.logotorneo, "Manolete Team", "10","10","0","0","10"));
+        items.add(new Clasificaciones(R.drawable.ic_torneo, "algo Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_torneo, "OtroMas Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_torneo, "Barraca Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_torneo, "Alaolla Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_torneo, "abc Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_torneo, "cde Team", "18","3","14","1","36"));
+        items.add(new Clasificaciones(R.drawable.logo, "efg Team", "18","3","14","1","36"));
 
+        /*equipos.add(new com.hgp_android.coleliga.Equipo("Manolete Team",logo,"Castellón", 20, 20,"Guardiola",1));
+        equipos.add(new com.hgp_android.coleliga.Equipo("algo Team",logo2,"Madrid", 20, 16,"Mourinho",3));
+        equipos.add(new com.hgp_android.coleliga.Equipo("OtroMas Team",logo,"Barcelona", 18, 14,"Manolo",7));
+        equipos.add(new com.hgp_android.coleliga.Equipo("Barraca Team",logo2,"Borriol", 21, 16,"Max",4));
+        equipos.add(new com.hgp_android.coleliga.Equipo("Alaolla Team",logo2,"Castellón", 16, 16,"Paco",2));
+        equipos.add(new com.hgp_android.coleliga.Equipo("abc Team",logo,"Castellón", 20, 16,"Anahí",6));
+        equipos.add(new com.hgp_android.coleliga.Equipo("cde Team",logo2,"Alicante", 20, 16,"Osvaldo",5));
+        equipos.add(new com.hgp_android.coleliga.Equipo("efg Team",logo,"Burriana", 20, 16,"Padre motivado",8));
+        * */
+        /*TODO cambiar los logos, me faltan las imagenes de los logos en mi rama*/
 
         // Usar un administrador para LinearLayout
         lManager = new LinearLayoutManager(this);
@@ -55,11 +67,13 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
                             @Override
                             public void onItemClick(View v, int position) {
                                 // Aqui Va lo de Equipos Clasificados
-                                Intent intent = new Intent(ListaClasificacionesTorneo.this, ListasTorneos.class);
+                                Intent intent = new Intent(ListaClasificacionesTorneo.this, VistaEquipoActivity.class);
+                                intent.putExtra("numeroEquipo", position);
+                                intent.putExtra("insercion", false);
                                 startActivity(intent);
+                               //falta que se ejecute la trassicion de pompartir
+                                /*TODO falta compartir elementos en transicion*/
                             }
-                        })
-        );
-
+                        }));
     }
 }

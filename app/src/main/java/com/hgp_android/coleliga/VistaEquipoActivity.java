@@ -13,11 +13,13 @@ import android.widget.TextView;
 public class VistaEquipoActivity extends AppCompatActivity {
     private Equipo equipo;
     private int posicion;
+    public static final int EXTRA_CONTACT = 1;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_equipo);
         CargaDatos();
+
         //Gestión botón flotante
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

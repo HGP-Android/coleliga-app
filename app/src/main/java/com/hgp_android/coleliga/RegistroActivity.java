@@ -30,7 +30,7 @@ public class RegistroActivity extends AppCompatActivity {
 
     public void lanzarLogin(View view)
     {
-        Intent i = new Intent(this,RegistroLogin.class);
+        Intent i = new Intent(this,PrincipalActivity.class);
         startActivity(i);
     }
 
@@ -42,7 +42,7 @@ public class RegistroActivity extends AppCompatActivity {
 
     public void lanzarMainDesdeLogin(View view) {
 
-            Intent i = new Intent(this, PrincipalActivity.class);
+            Intent i = new Intent(this, RegistroLogin.class);
             startActivity(i);
 
     }

@@ -22,7 +22,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_escudo"
-        android:elevation="4dp"/>
+        android:elevation="4dp"
+
+        android:transitionName="profile"
+        android:scaleType="centerCrop"
+        />
 
     <TextView
         android:id="@+id/titulo"
