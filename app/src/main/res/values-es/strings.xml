@@ -123,6 +123,9 @@
     <string name="name_activity_editar_equipo">Editar Equipo</string>
     <string name="name_activity_equipo">Equipo</string>
     <string name="name_activity_listado_equipo">Listado de equipos</string>
+    <string name="share_app">Compartir app</string>
+
+    <string name="hint_precio">"10.00"</string>
 
 
 </resources>

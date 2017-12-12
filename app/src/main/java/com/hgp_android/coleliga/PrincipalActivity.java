@@ -2,19 +2,23 @@ package com.hgp_android.coleliga;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.hgp_android.coleliga.lugares.PlaceListActivity;
 import com.hgp_android.coleliga.partidos.PartidosActivity;
 
 public class PrincipalActivity extends AppCompatActivity {
     private AdView adView;
+    private InterstitialAd interstitialAd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         MobileAds.initialize(this,"ca-app-pub-3405615265490445~2278870838");
@@ -77,14 +81,30 @@ public class PrincipalActivity extends AppCompatActivity {
 
         //Lanzamiento anuncio banner
         adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("9796B949D295ECF0BE1E8A93DE8C3095").build();
         adView.loadAd(adRequest);
+        //Lanzamiento anuncio intersticial
+        interstitialAd = new InterstitialAd(this); interstitialAd.setAdUnitId("ca-app-pub-9661377198510780/3437897421");
+        interstitialAd.loadAd(new AdRequest.Builder().addTestDevice( "9796B949D295ECF0BE1E8A93DE8C3095").build());
+
+        interstitialAd.setAdListener(new AdListener() {
+            @Override public void onAdClosed() {
+                interstitialAd.loadAd(new AdRequest.Builder()
+                        .addTestDevice("9796B949D295ECF0BE1E8A93DE8C3095").build());
+                Intent i = new Intent(PrincipalActivity.this, EquiposActivity.class);
+                startActivity(i);
+            } });
     }
     void lanzarEquipos(View view){
-        Toast.makeText(this,"Equipo",Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(this,
-                EquiposActivity.class);
-        startActivity(i);
+         if (interstitialAd.isLoaded()) {
+             interstitialAd.show();
+         } else {
+                Toast.makeText(PrincipalActivity.this, "El Anuncio no esta disponible aun", Toast.LENGTH_LONG).show();
+             Intent i = new Intent(PrincipalActivity.this, EquiposActivity.class);
+             startActivity(i);
+         }
+
+
     }
     void lanzarEntrenamientos(View view){
         Toast.makeText(this,"Entrenamiento",Toast.LENGTH_SHORT).show();

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hgp_android.coleliga">
-
+    <uses-permission android:name="com.android.vending.BILLING" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_coleliga"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_coleliga"
         android:supportsRtl="true"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
