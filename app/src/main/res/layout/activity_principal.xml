@@ -262,6 +262,7 @@
                     android:layout_width="0dp"
                     android:layout_height="80dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     app:cardCornerRadius="5dp"
                     app:cardElevation="8dp"
@@ -284,6 +285,41 @@
                         android:background="#8c000000"
                         android:padding="10dp"
                         android:text="@string/share_app"
+                        android:textAlignment="center"
+                        android:textColor="#ffe3e3e3"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/noAdsCard"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/shareApp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/anuncios" />
+
+                    <TextView
+                        android:id="@+id/txt13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="#8c000000"
+                        android:padding="10dp"
+                        android:text="@string/noads"
                         android:textAlignment="center"
                         android:textColor="#ffe3e3e3"
                         android:textSize="15sp"

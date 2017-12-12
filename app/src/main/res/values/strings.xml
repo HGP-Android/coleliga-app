@@ -123,5 +123,5 @@
     <string name="name_activity_equipo">Team </string>
     <string name="name_activity_listado_equipo">Equipment list </string>
     <string name="share_app">Share app</string>
-
+    <string name="noads">Delete Ads</string>
 </resources>
