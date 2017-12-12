@@ -44,5 +44,8 @@
     <string name="pp">P</string>
     <string name="pts">PTS</string>
     <string name="pe">E</string>
+    <string name="txt_splash">COLELIGA</string>
+    <string name="txt_splash2">Tus partidos y torneos al instante!</string>
+
 
 </resources>
