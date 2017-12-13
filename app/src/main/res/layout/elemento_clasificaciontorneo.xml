@@ -22,9 +22,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/logotorneo"
+        android:contentDescription="TODO"
+        tools:ignore="RtlHardcoded"
 
-        android:transitionName="profile"
-        android:scaleType="centerCrop"
+        android:transitionName="@string/transition_name_escudo"
 
         />
 
@@ -41,7 +42,8 @@
         app:layout_constraintTop_toTopOf="@+id/logoequipo"
         tools:text="Nombre"
         android:layout_marginRight="8dp"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        tools:ignore="RtlHardcoded" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -52,7 +54,7 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayoutpuntos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -81,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingLeft="0dp"
-            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
             android:text="@string/pg"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"

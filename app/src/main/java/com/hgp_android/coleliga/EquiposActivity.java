@@ -21,6 +21,9 @@ public class EquiposActivity extends AppCompatActivity {
 
     public EquipoAdapter adaptador;
     private RecyclerView.LayoutManager lManager;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +51,7 @@ public class EquiposActivity extends AppCompatActivity {
                         tmp.append(position);
                         /*String msg = "Se ha pulsado el elemento " + tmp.toString();
                         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();*/
+
                         Intent intent = new Intent(EquiposActivity.this, VistaEquipoActivity.class);
                         intent.putExtra("numeroEquipo", position);
                         intent.putExtra("insercion", false);

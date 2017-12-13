@@ -2,7 +2,9 @@ package com.hgp_android.coleliga;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,6 +21,7 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
     private RecyclerView recycler;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +31,7 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
         recycler.setHasFixedSize(true);
 
         //Inicializar los elementos
-        List items = new ArrayList();
+        final List items = new ArrayList();
 
         items.add(new Clasificaciones(R.drawable.logotorneo, "Manolete Team", "10","10","0","0","10"));
         items.add(new Clasificaciones(R.drawable.ic_torneo, "algo Team", "9","5","4","1","6"));
@@ -70,7 +73,19 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
                                 Intent intent = new Intent(ListaClasificacionesTorneo.this, VistaEquipoActivity.class);
                                 intent.putExtra("numeroEquipo", position);
                                 intent.putExtra("insercion", false);
-                                startActivity(intent);
+                                intent.putExtra(VistaEquipoActivity.ID, position);
+
+                                //intent.putExtra(DetailsActivity.ID, Contact.CONTACTS[position].getId());
+
+                                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+
+                                        ListaClasificacionesTorneo.this,
+                                        new Pair<View, String>(v.findViewById(R.id.logoequipo),getString(R.string.transition_name_escudo))
+                                );
+                                ActivityCompat.startActivity(ListaClasificacionesTorneo.this, intent, options.toBundle());
+
+
+                                //startActivity(intent);
                                //falta que se ejecute la trassicion de pompartir
                                 /*TODO falta compartir elementos en transicion*/
                             }

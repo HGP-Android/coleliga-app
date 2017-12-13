@@ -13,7 +13,8 @@ import android.widget.TextView;
 public class VistaEquipoActivity extends AppCompatActivity {
     private Equipo equipo;
     private int posicion;
-    public static final int EXTRA_CONTACT = 1;
+
+    public final static String ID= "ID";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

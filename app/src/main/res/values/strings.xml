@@ -47,5 +47,7 @@
     <string name="txt_splash">COLELIGA</string>
     <string name="txt_splash2">Tus partidos y torneos al instante!</string>
 
+    <string name="transition_name_escudo">transition:ESCUDO</string>
+
 
 </resources>

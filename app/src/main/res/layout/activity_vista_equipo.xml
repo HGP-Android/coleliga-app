@@ -24,8 +24,8 @@
         app:srcCompat="@drawable/ic_escudo"
         android:elevation="4dp"
 
-        android:transitionName="profile"
-        android:scaleType="centerCrop"
+        android:transitionName="@string/transition_name_escudo"
+
         />
 
     <TextView
