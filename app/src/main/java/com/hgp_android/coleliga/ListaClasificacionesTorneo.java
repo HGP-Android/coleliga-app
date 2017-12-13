@@ -75,19 +75,13 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
                                 intent.putExtra("insercion", false);
                                 intent.putExtra(VistaEquipoActivity.ID, position);
 
-                                //intent.putExtra(DetailsActivity.ID, Contact.CONTACTS[position].getId());
-
                                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-
                                         ListaClasificacionesTorneo.this,
                                         new Pair<View, String>(v.findViewById(R.id.logoequipo),getString(R.string.transition_name_escudo))
                                 );
                                 ActivityCompat.startActivity(ListaClasificacionesTorneo.this, intent, options.toBundle());
 
-
                                 //startActivity(intent);
-                               //falta que se ejecute la trassicion de pompartir
-                                /*TODO falta compartir elementos en transicion*/
                             }
                         }));
     }
