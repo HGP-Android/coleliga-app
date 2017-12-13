@@ -72,7 +72,11 @@ public class PrincipalActivity extends AppCompatActivity {
 
     }
     void lanzarResultados(View view){
-        Toast.makeText(this,"Resultado",Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this,
+        //        ListaPartidos.class);
+        Resultado.class);
+        startActivity(i);
+        //Toast.makeText(this,"Resultado",Toast.LENGTH_SHORT).show();
     }
     void lanzarClasificaciones(View view){
         Intent i = new Intent(this,

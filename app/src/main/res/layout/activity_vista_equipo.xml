@@ -61,7 +61,7 @@
             android:src="@drawable/categoria" />
 
         <TextView
-            android:id="@+id/categoria"
+            android:id="@+id/golA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"

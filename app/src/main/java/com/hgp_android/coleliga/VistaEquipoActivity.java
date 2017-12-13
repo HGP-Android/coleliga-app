@@ -2,7 +2,6 @@ package com.hgp_android.coleliga;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.media.Image;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,7 +41,7 @@ public class VistaEquipoActivity extends AppCompatActivity {
             TextView nombre, categoria, entrenador, ubicacion, jugadores;
             ImageView logo = (ImageView) findViewById(R.id.escudo);
             nombre = (TextView) findViewById(R.id.titulo);
-            categoria = (TextView) findViewById(R.id.categoria);
+            categoria = (TextView) findViewById(R.id.golA);
             entrenador = (TextView) findViewById(R.id.entrenador);
             ubicacion = (TextView) findViewById(R.id.direccion);
             jugadores = (TextView) findViewById(R.id.jugadores_max);

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/puntaje"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cancha"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="CANCHA 4 - 15:00HS"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10sp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                tools:text="CANCHA 4 - 15:00HS" />
+
+            <ImageView
+                android:id="@+id/logoequipoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_escudo"
+                android:transitionName="@string/transition_name_escudo"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/golB"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_escudo" />
+
+            <TextView
+                android:id="@+id/name_equipoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Equipo B"
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                card_view:layout_constraintEnd_toEndOf="@+id/logoequipoB"
+                card_view:layout_constraintStart_toStartOf="@+id/logoequipoB"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="86dp"
+                tools:text="Equipo B" />
+            <!--android:transitionName="@string/transition_name_equipo"-->
+
+            <ImageView
+                android:id="@+id/logoequipoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+
+                android:src="@drawable/ic_escudo"
+                card_view:layout_constraintEnd_toStartOf="@+id/golA"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_escudo"
+
+                />
+            <!--android:transitionName="@string/transition_name_escudo"-->
+            <TextView
+                android:id="@+id/name_equipoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Equipo A"
+
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="@+id/logoequipoA"
+                card_view:layout_constraintStart_toStartOf="@+id/logoequipoA"
+                card_view:layout_constraintTop_toBottomOf="@+id/logoequipoA"
+                card_view:layout_constraintVertical_bias="1.0"
+                tools:text="Equipo A" />
+            <!--android:transitionName="@string/transition_name_equipo"-->
+            <TextView
+                android:id="@+id/fecha"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/whitegrey"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:text="1 May 2017" />
+
+            <TextView
+                android:id="@+id/golA"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="50sp"
+                card_view:layout_constraintBottom_toTopOf="@+id/cancha"
+                card_view:layout_constraintEnd_toStartOf="@+id/guion"
+                card_view:layout_constraintTop_toTopOf="@+id/guion"
+                tools:text="2" />
+
+            <TextView
+                android:id="@+id/golB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+
+                android:layout_weight="1"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="50sp"
+                card_view:layout_constraintBottom_toTopOf="@+id/cancha"
+                card_view:layout_constraintStart_toEndOf="@+id/guion"
+                card_view:layout_constraintTop_toTopOf="@+id/guion"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/guion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="8dp"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+
+            <!--android:textColor="@color/primaryTextColor"-->
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/goles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/pelota"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+
+                android:src="@drawable/ic_escudo"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toStartOf="@+id/name_goleadorB"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_escudo" />
+
+            <TextView
+                android:id="@+id/name_goleadorB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Goleador B"
+
+                android:textSize="10sp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:text="Goleador B" />
+
+
+            <ImageView
+                android:id="@+id/pelota2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="16dp"
+
+                android:src="@drawable/ic_escudo"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_escudo" />
+
+            <TextView
+                android:id="@+id/name_goleadorA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Goleador A"
+
+                android:textSize="10sp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/pelota2"
+                card_view:layout_constraintTop_toTopOf="@+id/pelota2"
+                card_view:layout_constraintVertical_bias="0.0"
+                tools:text="Goleador A" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

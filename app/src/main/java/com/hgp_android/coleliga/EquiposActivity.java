@@ -63,6 +63,7 @@ public class EquiposActivity extends AppCompatActivity {
                         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
 
                                 EquiposActivity.this,
+                                new Pair<View, String>(v.findViewById(R.id.p),getString(R.string.transition_name_equipo)),
                                 new Pair<View, String>(v.findViewById(R.id.imagen),getString(R.string.transition_name_escudo))
                         );
                         ActivityCompat.startActivity(EquiposActivity.this, intent, options.toBundle());

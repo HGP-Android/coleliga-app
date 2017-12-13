@@ -48,6 +48,7 @@
     <string name="txt_splash2">Tus partidos y torneos al instante!</string>
 
     <string name="transition_name_escudo">transition:ESCUDO</string>
+    <string name="transition_name_equipo">transition:EQUIPO</string>
 
 
 </resources>
