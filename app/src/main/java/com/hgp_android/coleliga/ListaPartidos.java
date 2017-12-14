@@ -39,7 +39,7 @@ public class ListaPartidos extends AppCompatActivity {
         recycler.setLayoutManager(lManager);
 
         // Crear un nuevo adaptador
-        adapter = new PartidoAdapter(items);
+        adapter = new PartidoAAdapter(items);
         recycler.setAdapter(adapter);
 
         //Escuchador para la seleccion de los elementos del recyclerview
