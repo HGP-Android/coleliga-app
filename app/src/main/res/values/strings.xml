@@ -40,6 +40,7 @@
     <string name="hint_precio">"10.00"</string>
     <string name="hint_organizador">"Name of the Organizer"</string>
 
+    <string name="ingresa_correo_tel">Put your name or phone</string>
     <string name="equipo">"Teams"</string>
     <string name="pj">"MP"</string>
     <string name="pg">W</string>
@@ -150,4 +151,9 @@
     <string name="iniciar_facebook">Inicia sesión en tu cuenta de Facebook para conectarte con Coleliga</string>
 
     <string name="aviso">"APPLICATION IN TEST: This application has been developed to learn programming at Android Platform. No user information is stored for its use."</string>
+    <string name="vota_5_estrellas">RATE 5 STARS</string>
+    <string name="contact_author">CONTACT AUTHOR</string>
+    <string name="_2_have_problems_please_contact_author_to_report_issue">2. Have problems, please contact author to report issue</string>
+    <string name="_1_love_masterlistas_please_rate_5_star_in_play_store">1. Love MasterListas, please rate 5 star in Play Store</string>
+    <string name="please_take_a_second_for_rate">Please take a second for rate</string>
 </resources>

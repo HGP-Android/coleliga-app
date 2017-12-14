@@ -151,5 +151,10 @@
 
     <string name="nombre">Nombre</string>
     <string name="aviso">"APLICACION EN TEST: Esta aplicación ha sido desarrollada como parte de un proyecto docente para aprender a desarrollar App's para Android. No se almacena ningún tipo de dato de usuario para su uso."</string>
+    <string name="vota_5_estrellas">VOTA 5 ESTRELLAS</string>
+    <string name="contact_author">CONTACTA AUTOR</string>
+    <string name="_2_have_problems_please_contact_author_to_report_issue">2. Tengo un problema, por favor contacta con el autor para reportarlo</string>
+    <string name="_1_love_masterlistas_please_rate_5_star_in_play_store">1. Me encanta Coleliga, por favor vota 5 estrellas en Google Play</string>
+    <string name="please_take_a_second_for_rate">Por favor puntúa la App</string>
 
 </resources>

@@ -47,15 +47,8 @@ public class PrincipalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Use the Builder class for convenient dialog construction
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(R.string.aviso)
-                .setPositiveButton(R.string.accion_aceptar, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // FIRE ZE MISSILES!
-                    }
-                });
-        builder.show();
+        //Lanzo la petición de puntuación de la app
+        new RateMyApp(this).app_launched();
 
 
         MobileAds.initialize(this, "ca-app-pub-3405615265490445~2278870838");
