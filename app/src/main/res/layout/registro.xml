@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@color/colorAccent"
-                android:onClick="lanzarMainDesdeLogin"
+                android:onClick="lanzarLogin"
                 android:text="Sign in"
                 android:textAllCaps="false"
                 android:textColor="#fff"

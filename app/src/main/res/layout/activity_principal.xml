@@ -1,326 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/degradado">
+    android:layout_height="wrap_content"
 
-    <android.support.constraint.ConstraintLayout
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:background="@drawable/degradado">
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/equiposCard"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toStartOf="@+id/entrenamientosCard"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_equipos" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/equiposCard"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toStartOf="@+id/entrenamientosCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/txt2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/mis_equipos"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-        </android.support.v7.widget.CardView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_equipos" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/entrenamientosCard"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/equiposCard"
-            app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/mis_equipos"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_entrenamiento" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/entrenamientosCard"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/equiposCard"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/txt3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/entrenamientos"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_entrenamiento" />
 
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/entrenamientos"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/partidosCard"
-            android:layout_width="0dp"
-            android:layout_height="200dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/equiposCard">
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_pelota" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/partidosCard"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equiposCard">
 
-            <TextView
-                android:id="@+id/txt4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/mis_partidos"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_pelota" />
 
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/mis_partidos"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/resultadosCard"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toStartOf="@+id/clasificacionCard"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/partidosCard">
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/resultados" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/resultadosCard"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toStartOf="@+id/clasificacionCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/partidosCard">
 
-            <TextView
-                android:id="@+id/txt5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/resultados"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-        </android.support.v7.widget.CardView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/resultados" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/clasificacionCard"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/resultadosCard"
-            app:layout_constraintTop_toBottomOf="@+id/partidosCard">
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/resultados"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_torneos" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/clasificacionCard"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/resultadosCard"
+                app:layout_constraintTop_toBottomOf="@+id/partidosCard">
 
-            <TextView
-                android:id="@+id/txt9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/clasificaciones"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_torneos" />
 
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/clasificaciones"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/lugaresCard"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toStartOf="@+id/perfilesCard"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/resultadosCard">
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/image_gallery" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/lugaresCard"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toStartOf="@+id/perfilesCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resultadosCard">
 
-            <TextView
-                android:id="@+id/txt10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/instalaciones"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-        </android.support.v7.widget.CardView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_gallery" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/perfilesCard"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/lugaresCard"
-            app:layout_constraintTop_toBottomOf="@+id/resultadosCard">
+                <TextView
+                    android:id="@+id/txt10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/instalaciones"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_perfiles" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/perfilesCard"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lugaresCard"
+                app:layout_constraintTop_toBottomOf="@+id/resultadosCard">
 
-            <TextView
-                android:id="@+id/txt11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/mi_perfil"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_perfiles" />
 
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/txt11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/mi_perfil"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/shareApp"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lugaresCard">
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/perfil_jugador" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/shareApp"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lugaresCard">
 
-            <TextView
-                android:id="@+id/txt12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/share_app"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/perfil_jugador" />
 
-        </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/txt12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/share_app"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/noAdsCard"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shareApp">
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/anuncios" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/noAdsCard"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shareApp">
 
-            <TextView
-                android:id="@+id/txt13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="#8c000000"
-                android:padding="10dp"
-                android:text="@string/noads"
-                android:textAlignment="center"
-                android:textColor="#ffe3e3e3"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/anuncios" />
 
-        </android.support.v7.widget.CardView>
-    </android.support.constraint.ConstraintLayout>
+                <TextView
+                    android:id="@+id/txt13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#8c000000"
+                    android:padding="10dp"
+                    android:text="@string/noads"
+                    android:textAlignment="center"
+                    android:textColor="#ffe3e3e3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:adSize="SMART_BANNER"
         app:adUnitId="ca-app-pub-9661377198510780/8313560402" />
-</ScrollView>
+
+
+
+
+</LinearLayout>
+
+
