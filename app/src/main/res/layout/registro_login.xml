@@ -10,11 +10,11 @@ android:scrollbarAlwaysDrawVerticalTrack="true">
         android:id="@+id/login_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
         android:gravity="center_horizontal"
-        android:text="Create Login"
+        android:text="@string/create_login"
         android:textColor="#fff"
         android:textSize="26sp"
         android:textStyle="bold" />
@@ -65,8 +65,6 @@ android:scrollbarAlwaysDrawVerticalTrack="true">
                 android:inputType="numberPassword"
                 android:singleLine="true" />
         </android.support.design.widget.TextInputLayout>
-
-
         <Button
             android:id="@+id/button5"
             android:layout_width="fill_parent"
@@ -74,12 +72,10 @@ android:scrollbarAlwaysDrawVerticalTrack="true">
             android:layout_margin="10dp"
             android:background="@color/colorAccent"
             android:onClick="lanzarMainDesdeLogin"
-            android:text="Register"
+            android:text="@string/register"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="18sp" />
-
-
     </LinearLayout>
 </RelativeLayout>
 

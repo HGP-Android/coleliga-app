@@ -32,7 +32,7 @@ public class EquipoAdapter extends
             imagen = (ImageView) v.findViewById(R.id.imagen);
             nombre = (TextView) v.findViewById(R.id.p);
             jugadores = (TextView) v.findViewById(R.id.elementos);
-            categoria = (TextView) v.findViewById(R.id.categoria);
+            categoria = (TextView) v.findViewById(R.id.golA);
         }
     }
 

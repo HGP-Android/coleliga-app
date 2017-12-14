@@ -28,5 +28,18 @@
             android:id="@+id/nav_places"
             android:icon="@drawable/ic_place_black_24dp"
             android:title="Lugares"/>
+
+        <item android:title="Acciones adicionales">
+            <menu>
+                <item android:id="@+id/nav_preferencias"
+                    android:icon="@android:drawable/ic_menu_manage"
+                    android:title="Preferencias" />
+                <item android:id="@+id/nav_compartir"
+                    android:icon="@android:drawable/ic_menu_share"
+                    android:title="Compartir APP" />
+            </menu>
+        </item>
+
+
     </group>
 </menu>

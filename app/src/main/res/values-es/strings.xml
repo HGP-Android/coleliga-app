@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">coleliga</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="categorias">Elige Categoría</string>
+
+
+    <string name="tipo_identificacion_prompt">Selecciona un Tipo de Identificación</string>
+    <string-array name="tipo_identificacion">
+        <item>DNI</item>
+        <item>CIF</item>
+        <item>PASAPORTE</item>
+    </string-array>
+
+
+    <string name="modalidad">Modalidad</string>
+    <string name="modoliguilla">Liguilla</string>
+    <string name="modoliguilladesc">Sistema de todos contra todos, los participantes se enfrentan entre ellos en un número constante de oportunidades.</string>
+    <string name="modoeliminatoria">Eliminatoria</string>
+    <string name="modoeliminatoriadesc">Sistema de eliminación directa, el perdedor de un encuentro queda  eliminado, mientras que el ganador avanza a la siguiente fase. Se van jugando rondas.</string>
+    <string name="modoeliminaciondirecta">Eliminación directa</string>
+    <string name="modoeliminaciondirectadesc">Sistema .</string>
+    <string name="modomixta">Mixta</string>
+    <string name="modomixtadesc">Descripcion Mixta</string>
+    <string name="modomanual">Manual</string>
+    <string name="modomanualdesc">Descripción Manual</string>
+
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="accion_aceptar">Aceptar</string>
+    <string name="accion_actualizar">"Actualizar"</string>
+    <string name="accion_crear">"Crear"</string>
+
+    <string name="op_privado">Privado</string>
+    <string name="op_publico">Público</string>
+
+    <string name="hint_nomtorneo">Nombre del torneo</string>
+
+    <string name="hint_organizador">Nombre del Organizador</string>
+
+    <string name="equipo">Equipo</string>
+    <string name="pj">J</string>
+    <string name="pg">G</string>
+    <string name="pp">P</string>
+    <string name="pts">PTS</string>
+    <string name="pe">E</string>
+    <string name="nombre_del_equipo">Nombre del equipo</string>
+    <string name="logo_direccion">logo de la direccion</string>
+    <string name="entrenador">Indica el entrenador, por defecto serás tu!!</string>
+    <string name="donde_es_equipo">Indica de donde es el equipo</string>
+    <string name="jugadores_maximo">Indica los jugadores máximos</string>
+    <string name="mis_equipos">Mis equipos</string>
+    <string name="entrenamientos">Entrenamientos</string>
+    <string name="mis_partidos">Mis partidos</string>
+    <string name="resultados">Resultados</string>
+    <string name="clasificaciones">Clasificaciones</string>
+    <string name="instalaciones">Instalaciones</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="posibles">16 de 24 posibles</string>
+    <string name="direccion1">Avda. Casalduch 29D, 9º 18 12005 Castelló</string>
+    <string name="senior">Sénior</string>
+    <string name="guardiola">Guardiola</string>
+    <string name="nombre_del_partido">Nombre del Partido</string>
+    <string name="lugar">Lugar</string>
+    <string name="logo_de_la_fecha">logo de la fecha</string>
+    <string name="dd_mm_aaaa_hh_mm">dd/MM/aaaa HH:mm</string>
+    <string name="equipo_a">Equipo A</string>
+    <string name="equipo_b">Equipo B</string>
+    <string name="cantidad_maxima_de_jugadores">Cantidad máxima de jugadores</string>
+    <string name="fecha1">30/11/2017 10:00</string>
+    <string name="vs">VS</string>
+    <string name="nombre_lugar">Nombre lugar</string>
+    <string name="direccion2">C/Paloma Blanca 12, 28021. Madrid</string>
+    <string name="descripcion_lugar1">Más de 4 pistas de futbol 11 disponible. Medidas reglamentarias</string>
+    <string name="web">WEB</string>
+    <string name="de_10_00h_20_00h">de 10:00H / 20:00H</string>
+    <string name="telefono">TELÉFONO</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresa_contrasena">Ingresa la contraseña</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="ingresa_correo">Ingresa tu correo electrónico</string>
+
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+
+    <string name="coleliga">COLELIGA</string>
+    <string name="acceder">ACCEDER</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="register">Register</string>
+    <string name="correo_telefono">Correo electrónico o teléfono</string>
+    <string name="ingresa_la_contrasena">Ingresa la contraseña</string>
+
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="ahora_no">Ahora no</string>
+    <string name="continuar_como_max">Continuar como MAX</string>
+    <string name="coleliga_recibira_perfil">Coleliga recibirá tu perfil público y dirección de correo electrónico</string>
+    <string name="continuar">Continuar</string>
+    <string name="soy_organizador">SOY ORGANIZADOR</string>
+    <string name="soy_dueno_de_lugar">SOY DUEÑO DE LUGAR</string>
+    <string name="soy_jugador">SOY JUGADOR</string>
+    <string name="soy_entrenador">SOY ENTRENADOR</string>
+
+    <string name="name_activity_lista_partidos">Lista de Partidos</string>
+    <string name="name_activity_detalle_partido">Detalle Partido</string>
+    <string name="name_activity_editar_partido">Editar Partido</string>
+    <string name="name_activity_pantalla_principal">Principal</string>
+    <string name="name_activity_lista_jugadores">Lista de jugadores</string>
+    <string name="name_activity_organizador_nuevo">Organizador Nuevo</string>
+    <string name="name_activity_entrenador_nuevo">Entrenador Nuevo</string>
+    <string name="name_activity_dueno_nuevo">Dueño de Lugar Nuevo</string>
+    <string name="name_activity_jugador_nuevo">Jugador Nuevo</string>
+    <string name="name_activity_selecciona_perfil">Selecciona tu perfil</string>
+    <string name="name_activity_crear_cuenta">Crear Cuenta</string>
+    <string name="name_activity_login">Login</string>
+
+    <string name="name_activity_editar_equipo">Editar Equipo</string>
+    <string name="name_activity_equipo">Equipo</string>
+    <string name="name_activity_listado_equipo">Listado de equipos</string>
+    <string name="share_app">Compartir app</string>
+
+    <string name="hint_precio">"10.00"</string>
+    <string name="noads">Quitar anuncios</string>
+    <string name="create_login">Create Login</string>
+    <string name="foto_jugador">Foto Jugador</string>
+    <string name="nickname">Nickname</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="pais">Pais</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="submit">Submit</string>
+    <string name="posiciones">Posiciones</string>
+    <string name="delantero">Delantero</string>
+    <string name="mediocampista">MedioCampista</string>
+    <string name="defensa">Defensa</string>
+    <string name="portero">Portero</string>
+    <string name="razon_social">Nombre ó Razón Social</string>
+    <string name="identificacion">Identificación</string>
+    <string name="movil_contacto">Móvil de Contacto</string>
+    <string name="iniciar_facebook">Inicia sesión en tu cuenta de Facebook para conectarte con Coleliga</string>
+    <string name="ingresa_correo_tel">Ingresa tu correo electrónico o teléfono</string>
+    <string name="txt_splash">COLELIGA</string>
+    <string name="txt_splash2">Tus partidos y torneos al instante!</string>
+    <string name="transition_name_escudo">transition:ESCUDO</string>
+    <string name="transition_name_equipo">transition:EQUIPO</string>
+
+    <string name="nombre">Nombre</string>
+
+</resources>

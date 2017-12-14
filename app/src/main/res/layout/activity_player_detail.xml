@@ -11,9 +11,11 @@
         android:id="@+id/tvPlayerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerImage"
         tools:text="Nombre Jugador" />
@@ -22,28 +24,34 @@
         android:id="@+id/tvPlayerNickName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvPlayerName"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvPlayerName"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerName"
+        app:layout_constraintVertical_bias="0.088"
         tools:text="Nick jugador" />
 
     <TextView
         android:id="@+id/tvPlayerBirthDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="156dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPlayerCountry"
-        tools:text="22/10/1980" />
+        tools:layout_editor_absoluteY="403dp"
+        tools:text="22/10/1980"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvPlayerCountry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerNickName"
         tools:text="España" />
@@ -52,18 +60,17 @@
         android:id="@+id/tvPlayerCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="44dp"
         app:layout_constraintStart_toEndOf="@+id/tvPlayerCountry"
-        app:layout_constraintTop_toBottomOf="@+id/tvPlayerNickName"
-        tools:text="Barcelona" />
+        tools:layout_editor_absoluteY="290dp"
+        tools:text="Barcelona"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvPlayerPosition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="64dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPlayerBirthDate"
         tools:text="Delantero" />

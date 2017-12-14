@@ -1,7 +1,6 @@
 package com.hgp_android.coleliga;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,11 +27,14 @@ public class EditarEquipoActivity extends AppCompatActivity {
             equipo = EquiposActivity.equipos.elemento((int)posicion);
             TextView nombre, entrenador, ubicacion, jugadores;
             Button boton = (Button) findViewById(R.id.aceptar);
-            boton.setText("Actualizar");
+
+            String string = getString(R.string.accion_actualizar);
+            boton.setText(string);
+
             Spinner categoria;
             ImageView logo = (ImageView) findViewById(R.id.escudo);
             nombre = (TextView) findViewById(R.id.titulo);
-            categoria = (Spinner) findViewById(R.id.categoria);
+            categoria = (Spinner) findViewById(R.id.golA);
             entrenador = (TextView) findViewById(R.id.entrenador);
             ubicacion = (TextView) findViewById(R.id.direccion);
             jugadores = (TextView) findViewById(R.id.jugadores_max);
@@ -47,7 +49,10 @@ public class EditarEquipoActivity extends AppCompatActivity {
         else{
             equipo = new Equipo();
             Button boton = (Button) findViewById(R.id.aceptar);
-            boton.setText("Crear");
+            //boton.setText("Crear");
+            String string = getString(R.string.accion_crear);
+            boton.setText(string);
+
         }
     }
 
@@ -60,7 +65,7 @@ public class EditarEquipoActivity extends AppCompatActivity {
         Spinner categoria;
         ImageView logo = (ImageView) findViewById(R.id.escudo);
         nombre = (TextView) findViewById(R.id.titulo);
-        categoria = (Spinner) findViewById(R.id.categoria);
+        categoria = (Spinner) findViewById(R.id.golA);
         entrenador = (TextView) findViewById(R.id.entrenador);
         ubicacion = (TextView) findViewById(R.id.direccion);
         jugadores = (TextView) findViewById(R.id.jugadores_max);

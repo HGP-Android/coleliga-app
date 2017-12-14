@@ -28,8 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:contentDescription="Nombre del equipo"
-            android:text="TextView"
+            android:contentDescription="@string/nombre_del_equipo"
+            android:text="@string/nombre_del_equipo"
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -52,7 +52,7 @@
                 android:id="@+id/logo_lugar"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/ic_place_black_24dp" />
 
             <TextView
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="Lugar"
+                android:text="@string/lugar"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 
@@ -80,7 +80,7 @@
                 android:id="@+id/logo_fecha"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la fecha"
+                android:contentDescription="@string/logo_de_la_fecha"
                 android:src="@android:drawable/ic_menu_today" />
 
             <TextView
@@ -88,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="30/11/2017 10:00"
+                android:text="@string/fecha1"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 
@@ -115,14 +115,14 @@
                     android:id="@+id/logo_equipo_a"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="logo de la direccion"
+                    android:contentDescription="@string/logo_direccion"
                     android:src="@drawable/ic_escudo" />
 
                 <TextView
                     android:id="@+id/equipo_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Equipo A"/>
+                    android:text="@string/equipo_a"/>
             </LinearLayout>
 
             <TextView
@@ -130,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="VS"
+                android:text="@string/vs"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <LinearLayout
@@ -143,14 +143,14 @@
                     android:id="@+id/logo_equipo_b"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:contentDescription="logo de la direccion"
+                    android:contentDescription="@string/logo_direccion"
                     android:src="@drawable/ic_escudo2" />
 
                 <TextView
                     android:id="@+id/equipo_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Equipo B"/>
+                    android:text="@string/equipo_b"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -170,7 +170,7 @@
                 android:id="@+id/logo_jugadores_max"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:contentDescription="logo de la direccion"
+                android:contentDescription="@string/logo_direccion"
                 android:src="@drawable/jugador" />
 
             <TextView
@@ -178,7 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="16 de 24 posibles"
+                android:text="@string/posibles"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
 

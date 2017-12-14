@@ -10,16 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher_coleliga"
+        android:paddingBottom="20dp"
         android:paddingTop="30dp"
-        android:paddingBottom="20dp"/>
+        android:src="@drawable/ic_logosplash" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingBottom="30dp"
-        android:text="Continuar como MAX"
+        android:text="@string/continuar_como_max"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingBottom="50dp"
-        android:text="Coleliga recibirá tu perfil público y dirección de correo electrónico"
+        android:text="@string/coleliga_recibira_perfil"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp" />
@@ -37,14 +37,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
         android:background="@color/colorPrimary"
-        android:text="Continuar"
+        android:onClick="lanzarMainDesdeFacebook"
+        android:text="@string/continuar"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:layout_margin="50dp"
-        android:onClick="lanzarMainDesdeFacebook"
-        />
+        android:textColor="@android:color/background_light" />
 
 
 </LinearLayout>
