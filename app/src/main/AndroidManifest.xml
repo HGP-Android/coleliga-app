@@ -11,11 +11,6 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".RegistroActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -52,10 +47,6 @@
             android:label="@string/name_activity_login"
             android:screenOrientation="portrait"
             android:theme="@style/RegistroTheme"/>
-        <activity
-            android:name=".RegistroSignUp"
-            android:label="@string/name_activity_crear_cuenta"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".RegistroFull"
             android:label="@string/name_activity_selecciona_perfil"

@@ -10,16 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher_coleliga"
-        android:paddingTop="30dp"
-        android:paddingBottom="20dp"/>
+        android:src="@drawable/ic_logosplash" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingBottom="30dp"
-        android:text="Inicia sesión en tu cuenta de Facebook para conectarte con Coleliga"
+        android:text="@string/iniciar_facebook"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray" />
 
@@ -27,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Ingresa tu correo electrónico o teléfono"
+        android:text="@string/ingresa_correo_tel"
         android:textColor="@color/black" />
 
     <EditText
@@ -57,13 +55,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
+        android:onClick="signIn"
         android:text="@string/iniciar_sesion"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:paddingBottom="20dp"
-        android:onClick="signIn"
-        />
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,76 +16,98 @@
         android:elevation="6dp"
         android:scaleType="centerCrop"
         android:layout_gravity="center"
-        android:contentDescription="Foto Jugador"
+        android:contentDescription="@string/foto_jugador"
         android:src="@android:drawable/ic_menu_gallery" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
+        android:hint="@string/nombre"
         android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nickname"
+        android:hint="@string/nickname"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/fecha_nacimiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Fecha de Nacimiento"
+        android:hint="@string/fecha_de_nacimiento"
         android:focusable="false"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Pais"
+        android:hint="@string/pais"
         android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ciudad"
+        android:hint="@string/ciudad"
         android:inputType="text" />
 
-    <TextView
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Posiciones"
-        android:inputType="text"
-        android:layout_marginTop="5dp"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="78dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
-        <CheckBox
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delantero"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MedioCampista"/>
+            android:hint="@string/posiciones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.118" />
 
-    </LinearLayout>
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/delantero"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
         <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Defensa"/>
+            android:layout_marginTop="8dp"
+            android:text="@string/mediocampista"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+            app:layout_constraintStart_toStartOf="@+id/checkBox3"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
         <CheckBox
-            android:layout_width="wrap_content"
+            android:id="@+id/checkBox3"
+            android:layout_width="131dp"
             android:layout_height="wrap_content"
-            android:text="Portero"/>
-    </LinearLayout>
+            android:layout_marginStart="8dp"
+            android:text="@string/defensa"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/portero"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:layout_width="wrap_content"
@@ -94,6 +118,6 @@
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
         android:layout_marginTop="10dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="@android:color/white"/>
 </LinearLayout>

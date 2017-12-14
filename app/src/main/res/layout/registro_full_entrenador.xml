@@ -14,38 +14,38 @@
         android:elevation="6dp"
         android:scaleType="centerCrop"
         android:layout_gravity="center"
-        android:contentDescription="Foto Jugador"
+        android:contentDescription="@string/foto_jugador"
         android:src="@android:drawable/ic_menu_gallery" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
+        android:hint="@string/nombre"
         android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nickname"
+        android:hint="@string/nombre"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/fecha_nacimiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Fecha de Nacimiento"
+        android:hint="@string/fecha_de_nacimiento"
         android:focusable="false"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Pais"
+        android:hint="@string/pais"
         android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ciudad"
+        android:hint="@string/ciudad"
         android:inputType="text" />
 
     <Button
@@ -57,6 +57,6 @@
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
         android:layout_marginTop="10dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="@android:color/white"/>
 </LinearLayout>

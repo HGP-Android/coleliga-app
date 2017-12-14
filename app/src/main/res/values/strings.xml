@@ -131,4 +131,22 @@
     <string name="name_activity_listado_equipo">Equipment list </string>
     <string name="share_app">Share app</string>
     <string name="noads">Delete Ads</string>
+    <string name="create_login">Create Login</string>
+    <string name="foto_jugador">Foto Jugador</string>
+    <string name="nombre">Nombre</string>
+    <string name="nickname">Nickname</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="pais">Pais</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="submit">Submit</string>
+    <string name="posiciones">Posiciones</string>
+    <string name="delantero">Delantero</string>
+    <string name="mediocampista">MedioCampista</string>
+    <string name="defensa">Defensa</string>
+    <string name="portero">Portero</string>
+    <string name="razon_social">Nombre ó Razón Social</string>
+    <string name="identificacion">Identificación</string>
+    <string name="movil_contacto">Móvil de Contacto</string>
+    <string name="iniciar_facebook">Inicia sesión en tu cuenta de Facebook para conectarte con Coleliga</string>
+    <string name="ingresa_correo_tel">Ingresa tu correo electrónico o teléfono</string>
 </resources>

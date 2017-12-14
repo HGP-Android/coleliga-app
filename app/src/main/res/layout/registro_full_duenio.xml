@@ -9,50 +9,51 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre ó Razón Social"
+        android:hint="@string/razon_social"
         android:inputType="textPersonName" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:prompt="@string/tipo_identificacion_prompt"
         android:entries="@array/tipo_identificacion"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Identificación"
+        android:hint="@string/identificacion"
         android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nickname"
+        android:hint="@string/nickname"
         android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Móvil de Contacto"
+        android:hint="@string/movil_contacto"
         android:inputType="text|phone" />
 
     <EditText
         android:id="@+id/fecha_nacimiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Fecha de Nacimiento"
+        android:hint="@string/fecha_de_nacimiento"
         android:focusable="false"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Pais"
+        android:hint="@string/pais"
         android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ciudad"
+        android:hint="@string/ciudad"
         android:inputType="text" />
 
     <Button
@@ -64,6 +65,6 @@
         android:paddingLeft="70dp"
         android:paddingRight="70dp"
         android:layout_marginTop="10dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="@android:color/white"/>
 </LinearLayout>

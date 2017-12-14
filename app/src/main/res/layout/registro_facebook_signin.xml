@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher_coleliga"
+        android:paddingBottom="20dp"
         android:paddingTop="30dp"
-        android:paddingBottom="20dp"/>
+        android:src="@drawable/ic_logosplash" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,14 +37,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
         android:background="@color/colorPrimary"
+        android:onClick="lanzarMainDesdeFacebook"
         android:text="@string/continuar"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        android:layout_margin="50dp"
-        android:onClick="lanzarMainDesdeFacebook"
-        />
+        android:textColor="@android:color/background_light" />
 
 
 </LinearLayout>
