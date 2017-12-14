@@ -150,5 +150,6 @@
     <string name="transition_name_equipo">transition:EQUIPO</string>
 
     <string name="nombre">Nombre</string>
+    <string name="aviso">"APLICACION EN TEST: Esta aplicación ha sido desarrollada como parte de un proyecto docente para aprender a desarrollar App's para Android. No se almacena ningún tipo de dato de usuario para su uso."</string>
 
 </resources>
