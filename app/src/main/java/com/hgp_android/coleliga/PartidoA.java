@@ -5,7 +5,7 @@ package com.hgp_android.coleliga;
  * Created by AnahiAramayo on 09/11/2017.
  */
 
-public class Partido {
+public class PartidoA {
     private int resultadoA, resultadoB;
     private String name_equipoA, name_equipoB;
     private String fecha;
@@ -69,7 +69,7 @@ public class Partido {
         this.hora = hora;
     }
 
-    public Partido(int resultadoA, int resultadoB, String name_equipoA, String name_equipoB, String fecha, String lugar_cancha, String hora) {
+    public PartidoA(int resultadoA, int resultadoB, String name_equipoA, String name_equipoB, String fecha, String lugar_cancha, String hora) {
         this.resultadoA = resultadoA;
         this.resultadoB = resultadoB;
         this.name_equipoA = name_equipoA;

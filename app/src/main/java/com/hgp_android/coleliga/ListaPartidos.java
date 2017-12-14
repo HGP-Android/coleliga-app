@@ -2,9 +2,6 @@ package com.hgp_android.coleliga;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -32,10 +29,10 @@ public class ListaPartidos extends AppCompatActivity {
         //Inicializar los elementos
         final List items = new ArrayList();
 
-        items.add(new Partido(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
-        items.add(new Partido(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
-        items.add(new Partido(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
-        items.add(new Partido(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
+        items.add(new PartidoA(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
+        items.add(new PartidoA(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
+        items.add(new PartidoA(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
+        items.add(new PartidoA(2,1,"EquipoA","EquipoB","12/12/17","CANCHA - 15:00hs","15"));
 
         // Usar un administrador para LinearLayout
         lManager = new LinearLayoutManager(this);

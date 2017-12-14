@@ -15,7 +15,7 @@ import java.util.List;
 
 public class PartidoAdapter extends
         RecyclerView.Adapter <PartidoAdapter.ListaViewHolder> {
-    private List<Partido> items;
+    private List<PartidoA> items;
     public static class ListaViewHolder extends RecyclerView.ViewHolder {
         // Campos respectivos de un item
         public TextView resultadoA;
@@ -42,7 +42,7 @@ public class PartidoAdapter extends
             goleadorB = (TextView) v.findViewById(R.id.name_goleadorB);
         }
     }
-    public PartidoAdapter(List<Partido> items) {
+    public PartidoAdapter(List<PartidoA> items) {
         this.items = items;
     }
 
