@@ -13,8 +13,8 @@ import java.util.List;
  * Created by AnahiAramayo on 11/12/17.
  */
 
-public class PartidoAdapter extends
-        RecyclerView.Adapter <PartidoAdapter.ListaViewHolder> {
+public class PartidoAAdapter extends
+        RecyclerView.Adapter <PartidoAAdapter.ListaViewHolder> {
     private List<PartidoA> items;
     public static class ListaViewHolder extends RecyclerView.ViewHolder {
         // Campos respectivos de un item
@@ -42,7 +42,7 @@ public class PartidoAdapter extends
             goleadorB = (TextView) v.findViewById(R.id.name_goleadorB);
         }
     }
-    public PartidoAdapter(List<PartidoA> items) {
+    public PartidoAAdapter(List<PartidoA> items) {
         this.items = items;
     }
 
