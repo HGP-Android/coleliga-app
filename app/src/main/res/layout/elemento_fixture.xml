@@ -110,6 +110,7 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
+                android:text="1 May 2017"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/whitegrey"
                 card_view:layout_constraintLeft_toLeftOf="parent"
