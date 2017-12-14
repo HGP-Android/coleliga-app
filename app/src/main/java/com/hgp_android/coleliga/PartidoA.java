@@ -78,5 +78,5 @@ public class PartidoA {
         this.lugar_cancha = lugar_cancha;
         this.hora = hora;
     }
-
+/*TODO borrar si es necesario, no vi que habia creado la misma clase en la rama dev*/
 }
