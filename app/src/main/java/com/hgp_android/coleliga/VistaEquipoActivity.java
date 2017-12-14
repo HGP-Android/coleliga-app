@@ -14,10 +14,13 @@ public class VistaEquipoActivity extends AppCompatActivity {
     private Equipo equipo;
     private int posicion;
 
+    public final static String ID= "ID";
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_equipo);
         CargaDatos();
+
         //Gestión botón flotante
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +42,7 @@ public class VistaEquipoActivity extends AppCompatActivity {
             TextView nombre, categoria, entrenador, ubicacion, jugadores;
             ImageView logo = (ImageView) findViewById(R.id.escudo);
             nombre = (TextView) findViewById(R.id.titulo);
-            categoria = (TextView) findViewById(R.id.categoria);
+            categoria = (TextView) findViewById(R.id.golA);
             entrenador = (TextView) findViewById(R.id.entrenador);
             ubicacion = (TextView) findViewById(R.id.direccion);
             jugadores = (TextView) findViewById(R.id.jugadores_max);

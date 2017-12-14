@@ -21,6 +21,9 @@ public class EquiposActivity extends AppCompatActivity {
 
     public EquipoAdapter adaptador;
     private RecyclerView.LayoutManager lManager;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,10 +51,26 @@ public class EquiposActivity extends AppCompatActivity {
                         tmp.append(position);
                         /*String msg = "Se ha pulsado el elemento " + tmp.toString();
                         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();*/
+
                         Intent intent = new Intent(EquiposActivity.this, VistaEquipoActivity.class);
                         intent.putExtra("numeroEquipo", position);
                         intent.putExtra("insercion", false);
-                        startActivity(intent);
+                        //ver position reemplazar luego por id
+                        intent.putExtra(VistaEquipoActivity.ID, position);
+
+                        //intent.putExtra(DetailsActivity.ID, Contact.CONTACTS[position].getId());
+
+                        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+
+                                EquiposActivity.this,
+                                new Pair<View, String>(v.findViewById(R.id.p),getString(R.string.transition_name_equipo)),
+                                new Pair<View, String>(v.findViewById(R.id.imagen),getString(R.string.transition_name_escudo))
+                        );
+                        ActivityCompat.startActivity(EquiposActivity.this, intent, options.toBundle());
+
+
+
+                        //startActivity(intent);
                     }
                 })
         );
