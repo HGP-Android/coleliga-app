@@ -50,7 +50,9 @@
     <style name="CardView.MyBlue">
         <!--     Make the corners very round: -->
         <item name="cardCornerRadius">18dp</item>
+
     </style>
+
 
 
 </resources>

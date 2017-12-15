@@ -39,7 +39,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="5dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/primaryTextColor"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toEndOf="@+id/logoequipo"
         app:layout_constraintTop_toTopOf="@+id/logoequipo"
@@ -64,7 +64,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/logoequipo">
+        app:layout_constraintTop_toTopOf="@+id/logoequipo"
+        >
 
         <TextView
             android:id="@+id/partidosjugados"
@@ -76,7 +77,7 @@
             android:text="@string/pj"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
 
@@ -90,7 +91,7 @@
             android:text="@string/pg"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
 
@@ -104,7 +105,7 @@
             android:text="@string/pe"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
 
@@ -118,7 +119,7 @@
             android:text="@string/pp"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
 
@@ -130,7 +131,7 @@
             android:text="@string/pts"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
 

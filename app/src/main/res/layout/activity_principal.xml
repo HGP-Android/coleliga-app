@@ -28,7 +28,7 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -61,7 +61,7 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -129,7 +129,6 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -162,7 +161,6 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -196,7 +194,6 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -229,7 +226,6 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -264,7 +260,6 @@
                 android:layout_height="80dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
@@ -273,10 +268,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/lugaresCard">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/perfil_jugador" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="23dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_menu_share" />
 
                 <TextView
                     android:id="@+id/txt12"
@@ -299,7 +296,6 @@
                 android:layout_height="80dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"

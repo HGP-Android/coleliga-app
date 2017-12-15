@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/primaryTextColor"
         app:layout_constraintLeft_toRightOf="@+id/imagen"
         app:layout_constraintTop_toBottomOf="@+id/p"
         tools:text="Modalidad" />

@@ -202,7 +202,8 @@
         android:layout_height="164dp"
         app:srcCompat="@drawable/gol"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
     <!-- TODO Agregar la imagen del logo del torneo al inicio  -->
 </android.support.constraint.ConstraintLayout>

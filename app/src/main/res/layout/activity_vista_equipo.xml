@@ -40,7 +40,8 @@
             android:textSize="30sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/escudo" />
+            app:layout_constraintTop_toBottomOf="@+id/escudo"
+            android:textColor="@color/primaryTextColor"/>
 
 
         <LinearLayout
@@ -68,7 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:text="@string/senior"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/primaryTextColor"/>
     </LinearLayout>
 
         <LinearLayout
@@ -96,7 +98,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="@string/guardiola"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/primaryTextColor"/>
         </LinearLayout>
 
         <LinearLayout
@@ -124,7 +127,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="@string/direccion1"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/primaryTextColor"/>
         </LinearLayout>
 
         <LinearLayout
@@ -152,7 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="@string/posibles"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/primaryTextColor"/>
         </LinearLayout>
 
         <android.support.design.widget.FloatingActionButton
