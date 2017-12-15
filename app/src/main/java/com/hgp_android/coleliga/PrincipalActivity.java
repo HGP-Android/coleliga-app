@@ -286,7 +286,7 @@ public class PrincipalActivity extends AppCompatActivity {
         Intent i = new Intent(this,
                 PartidosActivity.class);
         startActivity(i);
-        Toast.makeText(this,"Partido",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,"Partido",Toast.LENGTH_SHORT).show();
 
     }
     void lanzarResultados(View view){
@@ -302,13 +302,13 @@ public class PrincipalActivity extends AppCompatActivity {
         startActivity(i);
     }
     void lanzarLugares(View view){
-        Toast.makeText(this,"Lugares",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,"Lugares",Toast.LENGTH_SHORT).show();
         Intent i = new Intent(this,
                 PlaceListActivity.class);
         startActivity(i);
     }
     void lanzarPerfil(View view){
-        Toast.makeText(this,"Perfil",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,"Perfil",Toast.LENGTH_SHORT).show();
         Intent i = new Intent(this,
                 RegistroFull.class);
         startActivity(i);
