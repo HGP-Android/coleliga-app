@@ -7,8 +7,8 @@ android {
         applicationId "com.hgp.android.coleliga"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 6
-        versionName "1.5"
+        versionCode 8
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
