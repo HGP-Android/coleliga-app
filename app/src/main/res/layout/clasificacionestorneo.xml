@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
+        android:background="@color/secondaryDarkColor"
         android:orientation="horizontal"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -23,7 +26,7 @@
             android:layout_weight="3"
             android:text="@string/equipo"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
@@ -36,7 +39,7 @@
             android:layout_weight="1"
             android:text="@string/pj"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
@@ -49,7 +52,7 @@
             android:layout_weight="1"
             android:text="@string/pg"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
@@ -62,7 +65,7 @@
             android:layout_weight="1"
             android:text="@string/pe"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
@@ -75,7 +78,7 @@
             android:layout_weight="1"
             android:text="@string/pp"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
@@ -88,21 +91,26 @@
             android:layout_weight="1"
             android:text="@string/pts"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="13sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@+id/logoequipo"
             app:layout_constraintTop_toBottomOf="@+id/p" />
 
     </LinearLayout>
 
+
+
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:fillViewport="true"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/degradado"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,8 +120,8 @@
             android:id="@+id/clasificaionestorneos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff"
+
             android:scrollbars="vertical" />
     </android.support.v4.widget.NestedScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

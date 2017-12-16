@@ -33,14 +33,14 @@ public class ListaClasificacionesTorneo extends AppCompatActivity {
         //Inicializar los elementos
         final List items = new ArrayList();
 
-        items.add(new Clasificaciones(R.drawable.logotorneo, "Manolete Team", "10","10","0","0","10"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "algo Team", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "OtroMas Team", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "Barraca Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_escudo, "Manolete Team", "10","10","0","0","10"));
+        items.add(new Clasificaciones(R.drawable.ic_escudo2, "algo Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_escudo, "OtroMas Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ic_escudo2, "Barraca Team", "9","5","4","1","6"));
         items.add(new Clasificaciones(R.drawable.ic_torneo, "Alaolla Team", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "abc Team", "9","5","4","1","6"));
-        items.add(new Clasificaciones(R.drawable.ic_torneo, "cde Team", "18","3","14","1","36"));
-        items.add(new Clasificaciones(R.drawable.logo, "efg Team", "18","3","14","1","36"));
+        items.add(new Clasificaciones(R.drawable.logotorneo, "abc Team", "9","5","4","1","6"));
+        items.add(new Clasificaciones(R.drawable.ico_pelota, "cde Team", "18","3","14","1","36"));
+        items.add(new Clasificaciones(R.drawable.ico_pelota, "efg Team", "18","3","14","1","36"));
 
 
         /*TODO cambiar los logos, me faltan las imagenes de los logos en mi rama*/

@@ -33,9 +33,12 @@ public class ListasTorneos extends AppCompatActivity {
         List items = new ArrayList();
 
         items.add(new Torneo(R.drawable.ic_torneo, "Torneo Jujuy", "Liguilla"));
-        items.add(new Torneo(R.drawable.logotorneo, "LogoTorneo", "Eliminatoria"));
-        items.add(new Torneo(R.drawable.logotorneo, "LogoTorneo", "Manual"));
-        items.add(new Torneo(R.drawable.logotorneo, "LogoTorneo", "Eliminación Directa"));
+        items.add(new Torneo(R.drawable.ic_torneo, "Torneo España", "Eliminatoria"));
+        items.add(new Torneo(R.drawable.ic_torneo, "Torneo Colombia", "Manual"));
+        items.add(new Torneo(R.drawable.ic_torneo, "Torneo Argentina", "Eliminación Directa"));
+        items.add(new Torneo(R.drawable.ico_pelota, "Torneo Ingenieria", "Eliminación Directa"));
+        items.add(new Torneo(R.drawable.ico_pelota, "Torneo Profesionales", "Eliminación Directa"));
+        items.add(new Torneo(R.drawable.ico_pelota, "Torneo MDAA", "Eliminación Directa"));
 
         // Usar un administrador para LinearLayout
         lManager = new LinearLayoutManager(this);
